@@ -76,6 +76,14 @@ body {
     color: #f2f2f2;
 }
 
+  /* Adjust size of tutorial images */
+  .tutorial img {
+    max-width: 100px;
+    max-width: 100px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
 /* Footer styles */
 footer {
     background-color: #333;
