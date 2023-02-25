@@ -2,20 +2,9 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +13,250 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.tutorial {
+  max-width: 300px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.tutorial img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.tutorial h3 {
+  margin: 10px;
+}
+
+.tutorial p {
+  margin: 10px;
+  text-align: left;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Footer */
+footer {
+  background-color: #282828;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.footer-bottom p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom p a:hover {
+  text-decoration: underline;
+}
+/* App.css */
+
+/* Landing page */
+.App {
+  text-align: center;
+}
+
+header {
+  padding: 2rem;
+  background-color: #222;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+header button {
+  padding: 1rem 2rem;
+  background-color: #fff;
+  color: #222;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+header button:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+  background-color: #f2f2f2;
+}
+
+.tutorial {
+  margin: 2rem;
+  text-align: center;
+  max-width: 350px;
+}
+
+.tutorial img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.tutorial h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tutorial p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tutorial button {
+  padding: 1rem 2rem;
+  background-color: #222;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.tutorial button:hover {
+  background-color: #fff;
+  color: #222;
+}
+
+/* Tutorial pages */
+
+.tutorial-page {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.tutorial-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.tutorial-page p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.tutorial-page ul {
+  list-style: none;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.tutorial-page ul li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.tutorial-page button {
+  padding: 1rem 2rem;
+  background-color: #222;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.tutorial-page button:hover {
+  background-color: #fff;
+  color: #222;
+}
+
+/* Footer */
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 2rem;
+}
+
+footer p {
+  font-size: 1.2rem;
 }
