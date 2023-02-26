@@ -161,7 +161,7 @@ function Home({ tutorials, searchTerm }) {
   );
 }
 
-function Tutorials1() {
+function Tutorials() {
   return (
     <section className="w3-container">
       <h2>Tutorials</h2>

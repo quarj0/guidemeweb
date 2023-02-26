@@ -3,7 +3,7 @@ import smtplib
 
 app = Flask(__name__)
 
-@app.route('/contact', methods=['POST'])
+@app.route('/Contact', methods=['POST'])
 def send_email():
     name = request.form.get('name')
     email = request.form.get('email')
