@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import { toast } from 'react-toastify';
+import axios from 'axios';
 
 function Contact() {
   const [name, setName] = useState("");
@@ -21,7 +22,20 @@ function Contact() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    toast.success('Message sent successfully!');
+
+    axios.post('/contact', {
+      name: name,
+      email: email,
+      message: message
+    })
+    .then(response => {
+      console.log(response.data);
+      toast.success('Message sent successfully!');
+    })
+    .catch(error => {
+      console.error(error);
+      toast.error('Failed to send message');
+    });
   };
 
   return (
@@ -54,13 +68,12 @@ function Contact() {
             id="message"
             name="message"
             value={message}
-            onChange={handleMessageChange}
-          ></textarea>
-        </div>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  );
+            onChange={handleMessageChange} />
+            </div>
+            <button type="submit">Send Message</button>
+            </form>
+          </div>   
+  )
 }
 
 export default Contact;
