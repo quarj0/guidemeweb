@@ -35,9 +35,6 @@ function Introduction() {
             <button className="tutorial-button" onClick={nextStep}>
               Next
             </button>
-            <button className="tutorial-button" onClick={prevStep}>
-              Previous
-            </button>
           </section>
         </>
       );
