@@ -21,13 +21,13 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="social-icons">
-        <a href="#" onClick={() => handleNavigation(encryptedLinkedin)} className='social-icons'>
+        <a href="#LinkedIn" onClick={() => handleNavigation(encryptedLinkedin)} className='social-icons'>
           {isDecrypted ? <FaLinkedin size={32} color="#ffffff" /> : 'LinkedIn'}
         </a>
-        <a href="#" onClick={() => handleNavigation(encryptedGithub)} className='social-icons'>
+        <a href="#Github" onClick={() => handleNavigation(encryptedGithub)} className='social-icons'>
           {isDecrypted ? <FaGithub size={32} color="#ffffff" /> : 'Github'}
         </a>
-        <a href="#" onClick={() => handleNavigation(encryptedInstagram)} className='social-icons'>
+        <a href="#Instagram" onClick={() => handleNavigation(encryptedInstagram)} className='social-icons'>
           {isDecrypted ? <FaInstagram size={32} color="#ffffff" /> : 'Instagram'}
         </a>
       </div>

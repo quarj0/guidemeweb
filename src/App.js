@@ -14,7 +14,6 @@ import Script from "./components/images/script.jpeg";
 import network from "./components/images/network.jpeg";
 import Footer from "./components/Footer";
 
-
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
@@ -53,8 +52,6 @@ function App() {
       image: network,
       path: "/network",
     },
-
-    
   ];
 
   function handleSearchChange(event) {
@@ -94,7 +91,7 @@ function App() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/donate" className="nav-links" >
+                  <Link to="/donate" className="nav-links">
                     Donate
                   </Link>
                 </li>
@@ -106,27 +103,37 @@ function App() {
               </ul>
             </div>
           </nav>
-          {searchResults.length > 0 ? (
-            <Routes>
-              <Route
-                path="/"
-                element={
-                  <Home tutorials={searchResults} searchTerm={searchTerm} />
-                }
-              />
-            </Routes>
-          ) : (
-            <Routes>
-            <Route path="/donate" element={<Donate />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/" element={<Home tutorials={tutorials} searchTerm={searchTerm} searchResults={searchResults} />} />
-            <Route path="/basics" element={<Basics searchTerm={searchTerm} searchResults={searchResults} />} />
-            <Route path="/advanced" element={<Advanced searchTerm={searchTerm} searchResults={searchResults} />} />
-            <Route path="/analysis" element={<Analysis searchTerm={searchTerm} searchResults={searchResults} />} />
-            <Route path="/network" element={<Network searchTerm={searchTerm} searchResults={searchResults} />} />
-            </Routes>
-          )}
-         <Footer />
+          <Routes>
+            <Route
+              path="/donate"
+              element={<Donate searchTerm={searchTerm} searchResults={searchResults} />}
+            />
+            <Route
+              path="/contact"
+              element={<Contact searchTerm={searchTerm} searchResults={searchResults} />}
+            />
+            <Route
+              path="/"
+              element={<Home tutorials={tutorials} searchTerm={searchTerm} searchResults={searchResults} />}
+            />
+            <Route
+              path="/basics"
+              element={<Basics searchTerm={searchTerm} searchResults={searchResults} />}
+            />
+            <Route
+              path="/advanced"
+              element={<Advanced searchTerm={searchTerm} searchResults={searchResults} />}
+            />
+            <Route
+              path="/analysis"
+              element={<Analysis searchTerm={searchTerm} searchResults={searchResults} />}
+            />
+            <Route
+              path="/network"
+              element={<Network searchTerm={searchTerm} searchResults={searchResults} />}
+            />
+          </Routes>
+          <Footer />
         </div>
       </Router>
     </section>
@@ -154,7 +161,7 @@ function Home({ tutorials, searchTerm }) {
   );
 }
 
-function Tutorials() {
+function Tutorials1() {
   return (
     <section className="w3-container">
       <h2>Tutorials</h2>
