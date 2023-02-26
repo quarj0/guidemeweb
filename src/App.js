@@ -6,12 +6,13 @@ import Basics from "./components/Basics";
 import Advanced from "./components/Advanced";
 import Analysis from "./components/Analysis";
 import Network from "./components/Network";
-import Login from "./components/Login";
-import Signup from "./components/register";
+import Donate from "./components/Donate";
+import Contact from "./components/Contact";
 import Python from "./components/images/Python.png";
 import DataScince from "./components/images/analysis.png";
 import Script from "./components/images/script.jpeg";
 import network from "./components/images/network.jpeg";
+
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -92,13 +93,13 @@ function App() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/login" className="nav-links">
-                    Login
+                  <Link to="/donate" className="nav-links" >
+                    Donate
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/signup" className="nav-links">
-                    Signup
+                  <Link to="/contact" className="nav-links">
+                    Contact
                   </Link>
                 </li>
               </ul>
@@ -115,8 +116,8 @@ function App() {
             </Routes>
           ) : (
             <Routes>
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
+            <Route path="/donate" element={<Donate />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/" element={<Home tutorials={tutorials} searchTerm={searchTerm} searchResults={searchResults} />} />
             <Route path="/basics" element={<Basics searchTerm={searchTerm} searchResults={searchResults} />} />
             <Route path="/advanced" element={<Advanced searchTerm={searchTerm} searchResults={searchResults} />} />

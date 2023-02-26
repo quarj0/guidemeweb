@@ -1116,7 +1116,7 @@ function Tutorial1() {
         <Introduction />
       </main>
       <footer className="tutorial-footer">
-        <Link to="/">Back to Tutorials</Link>
+        <Link to="/" className="link">Back to Tutorials</Link>
       </footer>
     </div>
   );
