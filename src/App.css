@@ -79,18 +79,10 @@ body {
   /* Adjust size of tutorial images */
   .tutorial img {
     max-width: 100px;
-    max-width: 100px;
     height: auto;
     margin: 0 auto;
     display: block;
   }
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    margin-top: 50px;
-}
 
 /* Home page styles */
 
@@ -119,7 +111,7 @@ footer {
 }
 
 .tutorial img {
-    max-width: 100%;
+    max-width: 100px;
     height: auto;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;

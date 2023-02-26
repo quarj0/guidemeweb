@@ -12,6 +12,7 @@ import Python from "./components/images/Python.png";
 import DataScince from "./components/images/analysis.png";
 import Script from "./components/images/script.jpeg";
 import network from "./components/images/network.jpeg";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -125,9 +126,7 @@ function App() {
             <Route path="/network" element={<Network searchTerm={searchTerm} searchResults={searchResults} />} />
             </Routes>
           )}
-          <footer className="w3-container w3-black">
-            <p className="w3-center">&copy; 2023 Python Tutorials</p>
-          </footer>
+         <Footer />
         </div>
       </Router>
     </section>
