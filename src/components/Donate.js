@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Donate.css";
+import "../styles/Donate.css";
 
 function Donate({ setIsAuthenticated }) {
   const [donationAmount, setDonationAmount] = useState(0);

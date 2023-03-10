@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from  "react-router-dom";
-import './Tutorial.css';
+import '../styles/advanced.css';
 
 function Network(){
     const [step , setStep] = useState(1);

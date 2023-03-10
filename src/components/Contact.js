@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./Contact.css";
 import { toast } from 'react-toastify';
 import axios from 'axios';
+import "../styles/Contact.css";
 
 function Contact() {
   const [name, setName] = useState("");

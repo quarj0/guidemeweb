@@ -1,58 +1,22 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import "./App.css";
-import "./components/Tutorial.css";
+
 import Basics from "./components/Basics";
 import Advanced from "./components/Advanced";
 import Analysis from "./components/Analysis";
 import Network from "./components/Network";
 import Donate from "./components/Donate";
 import Contact from "./components/Contact";
-import Python from "./components/images/Python.png";
-import DataScince from "./components/images/analysis.png";
-import Script from "./components/images/script.jpeg";
-import network from "./components/images/network.jpeg";
 import Footer from "./components/Footer";
+import tutorials from "./components/tutorials.js";
+import "./App.css";
+
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 
-  const tutorials = [
-    {
-      id: 1,
-      title: "Python Basics",
-      description:
-        "Python is the most popular programming language among beginners, thanks to its simplicity and readability.",
-      image: Python,
-      path: "/basics",
-    },
-    {
-      id: 2,
-      title: "Advanced Python",
-      description:
-        "Once you have learned the basics of Python, you can start exploring its advanced features.",
-      image: Script,
-      path: "/advanced",
-    },
-    {
-      id: 3,
-      title: "Data Analysis with Python",
-      description:
-        "Data Analysis is the most important skill in today's world. Python provides several powerful libraries for data analysis and visualization.",
-      image: DataScince,
-      path: "/analysis",
-    },
 
-    {
-      id: 4,
-      title: "Python for Networking",
-      description:
-        "Networking is the process of connecting two or more computing devices together for the purpose of sharing data. In this tutorial, you will learn how to use Python to create a simple network application.",
-      image: network,
-      path: "/network",
-    },
-  ];
 
   function handleSearchChange(event) {
     setSearchTerm(event.target.value);
@@ -161,19 +125,5 @@ function Home({ tutorials, searchTerm }) {
   );
 }
 
-function Tutorials() {
-  return (
-    <section className="w3-container">
-      <h2>Tutorials</h2>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/basics" element={<Basics />} />
-        <Route path="/advanced" element={<Advanced />} />
-        <Route path="/analysis" element={<Analysis />} />
-        <Route path="/network" element={<Network />} />
-      </Routes>
-    </section>
-  );
-}
 
 export default App;

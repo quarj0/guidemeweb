@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import "./Tutorial.css";
+import '../styles/advanced.css'
 
 // Introduction component
 function Introduction() {
@@ -32,7 +32,7 @@ function Introduction() {
               We recommend that you complete the{" Basic Python Tutorial"}{" "}
               before starting this tutorial.
             </p>
-            <button className="tutorial-button" onClick={nextStep}>
+            <button className="tutorial-button-next" onClick={nextStep}>
               Next
             </button>
           </section>
@@ -183,10 +183,10 @@ function Introduction() {
               When you call a function, Python checks the number of arguments
               passed in. If it is wrong, Python raises a TypeError exception.
             </p>
-            <button className="tutorial-button" onClick={nextStep}>
+            <button className="tutorial-button-next" onClick={nextStep}>
               Next
             </button>
-            <button className="tutorial-button" onClick={prevStep}>
+            <button className="tutorial-button-back" onClick={prevStep}>
               Previous
             </button>
           </section>
@@ -316,10 +316,10 @@ function Introduction() {
             <pre>
               <code>del p1</code>
             </pre>
-            <button className="tutorial-button" onClick={nextStep}>
+            <button className="tutorial-button-next" onClick={nextStep}>
               Next
             </button>
-            <button className="tutorial-button" onClick={prevStep}>
+            <button className="tutorial-button-back" onClick={prevStep}>
               Previous
             </button>
           </section>
@@ -373,10 +373,10 @@ function Introduction() {
               </code>
             </pre>
             <p></p>
-            <button className="tutorial-button" onClick={nextStep}>
+            <button className="tutorial-button-next" onClick={nextStep}>
               Next
             </button>
-            <button className="tutorial-button" onClick={prevStep}>
+            <button className="tutorial-button-back" onClick={prevStep}>
               Previous
             </button>
           </section>
@@ -531,10 +531,10 @@ function Introduction() {
                 %% - A % character<br></br>
               </code>
             </pre>
-            <button className="tutorial-button" onClick={nextStep}>
+            <button className="tutorial-button-next" onClick={nextStep}>
               Next
             </button>
-            <button className="tutorial-button" onClick={prevStep}>
+            <button className="tutorial-button-back" onClick={prevStep}>
               Previous
             </button>
           </section>
@@ -604,10 +604,10 @@ function Introduction() {
               create yourself.
             </p>
 
-            <button className="tutorial-button" onClick={nextStep}>
+            <button className="tutorial-button-next" onClick={nextStep}>
               Next
             </button>
-            <button className="tutorial-button" onClick={prevStep}>
+            <button className="tutorial-button-back" onClick={prevStep}>
               Previous
             </button>
           </section>
@@ -655,10 +655,10 @@ function Introduction() {
               information about the search, and the result:
             </p>
 
-            <button className="tutorial-button" onClick={nextStep}>
+            <button className="tutorial-button-next" onClick={nextStep}>
               Next
             </button>
-            <button className="tutorial-button" onClick={prevStep}>
+            <button className="tutorial-button-back" onClick={prevStep}>
               Previous
             </button>
           </section>
@@ -790,7 +790,7 @@ function Introduction() {
               </code>
             </pre>
 
-            <button className="tutorial-button" onClick={nextStep}>
+            <button className="tutorial-button-next" onClick={nextStep}>
               Next
             </button>
             <button className="tutorial-button" onClick={prevStep}>

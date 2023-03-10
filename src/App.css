@@ -1,167 +1,149 @@
-/* App.css */
-
-/* Global styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    background-color: #1b1b1b;
-}
-
-/* Navbar styles */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navbar-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
 }
 
 .navbar-logo {
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-    margin-right: 20px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: auto;
 }
 
 .search-bar {
-    margin-right: 20px;
+  width: 33%;
+  display: flex;
+  justify-content: center;
 }
 
 .search-bar input[type="text"] {
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #f2f2f2;
-    font-size: 16px;
-    color: #333;
-    width: 300px;
-}
-
-.search-bar input[type="text"]:focus {
-    outline: none;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 .nav-menu {
-    display: flex;
-    list-style: none;
-}
-
-.nav-item {
-    margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 33%;
 }
 
 .nav-links {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    transition: all 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1.2rem;
 }
 
-.nav-links:hover {
-    color: #f2f2f2;
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    width: 50%;
+  }
+  
+  .search-bar {
+    display: none;
+  }
+  
+  .nav-menu {
+    width: 50%;
+  }
+  
+  .nav-links {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
 }
 
-  /* Adjust size of tutorial images */
+  
+  /* Tutorial styles */
+  .tutorial {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .tutorial:hover {
+    transform: translateY(-5px);
+  }
+  
   .tutorial img {
-    max-width: 100px;
-    height: auto;
-    margin: 0 auto;
-    display: block;
+    width: 100%;
+    height: au;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .tutorial h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .tutorial p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .btn-read-more {
+    background-color: #f1c40f;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .btn-read-more:hover {
+    background-color: #333;
+    color: #fff;
   }
 
-/* Home page styles */
-
-.w3-container {
-    background-color: rgba(255, 255, 255, 0.6);
-    
-    margin-top: 2rem;
-    box-shadow: 0px 0px 10px rgba(9, 9, 10, 0.5);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.tutorial {
-    width: 30%;
-    margin: 2rem;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgb(34, 35, 36);
-    border-radius: 0.5rem;
-    transition: transform 0.2s ease;
-}
-
-.tutorial:hover {
-    transform: scale(1.05);
-}
-
-.tutorial img {
-    max-width: 100px;
-    height: auto;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-}
-
-.tutorial-body {
-    padding: 1rem;
-    text-align: left;
-}
-
-.tutorial-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
-.tutorial-description {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-.tutorial-footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 1rem;
-}
-
-.tutorial-author {
-    margin-right: 1rem;
-}
-
-.tutorial-date {
-    color: #999;
-}
-
-
-.btn-read-more {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #061b619d;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 18px;
-    margin-top: 20px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.btn-read-more:hover {
-    background-color: #f2f2f2;
-    color: #333;
-}
+  @media (max-width: 768px) {
+    .navbar-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .search-bar input[type="text"] {
+      margin: 10px 0;
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .nav-menu {
+      margin-top: 10px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-item {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  

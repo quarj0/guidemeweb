@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 import CryptoJS from 'crypto-js';
-import './Footer.css'
+import '../styles/Footer.css'
 const Footer = () => {
   const secretKey = 'mySecretKey';
   const encryptedLinkedin = CryptoJS.AES.encrypt('https://www.linkedin.com/in/quarjo/', secretKey).toString();
