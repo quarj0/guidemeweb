@@ -8,7 +8,10 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-app.secret_key = 'secret-key'
+# Secret key for session management
+def secret_key():
+    return os.urandom(24)
+    
 
 # Database initialization
 DATABASE = 'database.db'
@@ -21,7 +24,7 @@ def get_db():
 def init_db():
     db = get_db()
 
-    with app.open_resource('schema.sql', mode='r') as f:
+    with app.open_resource('database.db', mode='r') as f:
         db.cursor().executescript(f.read())
 
     db.commit()
@@ -72,10 +75,9 @@ def feedback():
         return redirect(url_for('login'))
 
     # Access the feedback page here
-    
     return "Welcome to the feedback section!"
 
 if __name__ == '__main__':
     init_db()
 
-    app.run(debug=True)
+    app.run(debug=True, port=5001)
