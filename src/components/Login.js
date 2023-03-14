@@ -25,7 +25,7 @@ const LoginPage = ({ setAuthenticated }) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("http://127.0.0.1:5000/login", { email, password });
+      const response = await axios.post("http://127.0.0.1:5001/login", { email, password });
       setAuthenticated(true);
       localStorage.setItem("token", response.data.access_token);
       history("/feedbacks");
@@ -78,6 +78,7 @@ const LoginPage = ({ setAuthenticated }) => {
               type="email"
               value={email}
               onChange={(event) => setEmail(event.target.value)}
+              autoComplete="username"
             />
           </label>
           <br />
@@ -87,6 +88,7 @@ const LoginPage = ({ setAuthenticated }) => {
               type="password"
               value={password}
               onChange={(event) => setPassword(event.target.value)}
+              autoComplete="current-password"
             />
           </label>
           <br />

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "../styles/Home.css";
-import HTML from "../assets/html.png";
+
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -209,7 +209,7 @@ function Home() {
             </div>
             <div className="tutorial-card">
               <div className="tutorial-card-img">
-                <img src={<HTML />} alt="Tutorial" />
+                <img src="./assets/html.png" alt="Tutorial" />
               </div>
               <div className="tutorial-card-content">
                 <h3>HTML</h3>

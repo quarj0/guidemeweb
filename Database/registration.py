@@ -6,7 +6,7 @@ import sqlite3
 import os
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=['http://localhost:3000'], supports_credentials=True)
 
 # Secret key for session management
 def secret_key():

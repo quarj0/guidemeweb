@@ -19,7 +19,7 @@ function SignupPage() {
       return;
     }
     try {
-      const response = await axios.post("http://127.0.0.1:5000/register", {
+      const response = await axios.post("http://127.0.0.1:5001/register", {
         email,
         password,
       });
@@ -33,7 +33,7 @@ function SignupPage() {
   return (
     <div className="auth-form">
       <h2>Sign Up</h2>
-      <form onSubmit={handleSubmit} method="POST" action="registration.py">
+      <form onSubmit={handleSubmit}>
         <div className="form-control">
           <label htmlFor="email">Email</label>
           <input
@@ -41,6 +41,7 @@ function SignupPage() {
             id="email"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
+            autoComplete="username"
           />
         </div>
         <div className="form-control">
@@ -50,6 +51,7 @@ function SignupPage() {
             id="password"
             value={password}
             onChange={(event) => setPassword(event.target.value)}
+            autoComplete="new-password"
           />
         </div>
         <div className="form-control">
@@ -59,6 +61,7 @@ function SignupPage() {
             id="confirm-password"
             value={confirmPassword}
             onChange={(event) => setConfirmPassword(event.target.value)}
+            autoComplete="new-password"
           />
         </div>
         {error && <p className="error">{error}</p>}
