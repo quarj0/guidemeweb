@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-
 import "../styles/Home.css";
+import HTML from "../assets/html.png";
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -36,7 +36,7 @@ function Home() {
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMenu}>
-            My Website
+            GUIDE ME LEARN
           </Link>
           <div
             className={`menu-icon ${menuOpen ? "open" : ""}`}
@@ -53,18 +53,13 @@ function Home() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/about" className="nav-link" onClick={closeMenu}>
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/services" className="nav-link" onClick={closeMenu}>
-                Services
-              </Link>
-            </li>
-            <li className="nav-item">
               <Link to="/contact" className="nav-link" onClick={closeMenu}>
                 Contact
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/login" className="nav-link" onClick={closeMenu}>
+                Login
               </Link>
             </li>
           </ul>
@@ -75,8 +70,8 @@ function Home() {
           <div className="landing-page-header">
             <h1>Guide Me Learn</h1>
             <p>
-              Learn a skill with our online tutorials, references,
-              and exercises.
+              Learn a skill with our online tutorials, references, and
+              exercises.
             </p>
             <form className="search-form">
               <input
@@ -90,7 +85,7 @@ function Home() {
               </button>
             </form>
           </div>
-        
+
           <div className="landing-page-tutorials">
             <h2>Popular Tutorials</h2>
             <div className="tutorial-card">
@@ -100,7 +95,7 @@ function Home() {
               <div className="tutorial-card-content">
                 <h3>Python</h3>
                 <p>Learn Python programming language.</p>
-                <Link to="/python-basics" className="btn-start-learning">
+                <Link to="/python" className="btn-start-learning">
                   Start Learning
                 </Link>
                 <Link to="/reference" className="btn-reference">
@@ -127,8 +122,7 @@ function Home() {
                 </Link>
               </div>
             </div>
-         
-           
+
             <div className="tutorial-card">
               <div className="tutorial-card-img">
                 <img src="https://via.placeholder.com/350x200" alt="Tutorial" />
@@ -136,10 +130,10 @@ function Home() {
               <div className="tutorial-card-content">
                 <h3>JavaScript</h3>
                 <p>Learn JavaScript programming language.</p>
-                <Link to="#start" className="btn-start-learning">
+                <Link to="/javascript" className="btn-start-learning">
                   Start Learning
                 </Link>
-                <Link to="#reference" className="btn-reference">
+                <Link to="/reference" className="btn-reference">
                   Reference
                 </Link>
               </div>
@@ -162,7 +156,7 @@ function Home() {
                 </Link>
               </div>
             </div>
-        
+
             <div className="tutorial-card">
               <div className="tutorial-card-img">
                 <img src="https://via.placeholder.com/350x200" alt="Tutorial" />
@@ -178,11 +172,6 @@ function Home() {
                 </Link>
               </div>
             </div>
-          
-           
-            
-        
-            
 
             <div className="tutorial-card">
               <div className="tutorial-card-img">
@@ -198,10 +187,8 @@ function Home() {
                   Reference
                 </Link>
               </div>
-
             </div>
-        
-           
+
             <div className="tutorial-card">
               <div className="tutorial-card-img">
                 <img src="https://via.placeholder.com/350x200" alt="Tutorial" />
@@ -222,7 +209,7 @@ function Home() {
             </div>
             <div className="tutorial-card">
               <div className="tutorial-card-img">
-                <img src="https://via.placeholder.com/350x200" alt="Tutorial" />
+                <img src={<HTML />} alt="Tutorial" />
               </div>
               <div className="tutorial-card-content">
                 <h3>HTML</h3>
@@ -249,7 +236,6 @@ function Home() {
                   Reference
                 </Link>
               </div>
-
             </div>
             <div className="tutorial-card">
               <div className="tutorial-card-img">
@@ -266,14 +252,13 @@ function Home() {
                 </Link>
               </div>
             </div>
-            </div>
           </div>
+        </div>
         {/* <section className="reference" id="reference">
           <div className="container">
             <div className="row">
               <div className="col-md-12">
                 <h2></h2> */}
-
       </main>
       <footer className="footer">
         <div className="container">
@@ -346,7 +331,7 @@ function Home() {
           </div>
           <div className="footer-caret">
             <a href="#top">
-                <i className="fas fa-caret-up" size="50x" ></i>
+              <i className="fas fa-caret-up" size="50x"></i>
             </a>
           </div>
         </div>
