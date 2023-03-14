@@ -1,3 +1,4 @@
+from urllib import response
 from flask import Flask, jsonify, request, session, redirect, url_for, send_from_directory
 from flask_cors import CORS
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -6,7 +7,7 @@ import sqlite3
 import os
 
 app = Flask(__name__)
-CORS(app, origins=['http://localhost:3000'], supports_credentials=True)
+CORS(app, origins=['http://localhost:3000'])
 
 # Secret key for session management
 def secret_key():
@@ -36,6 +37,7 @@ def register():
     name = request.form.get('name')
     email = request.form.get('email')
     password = generate_password_hash(request.form.get('password'))
+    
 
     # Check if the email is already registered
     if db.execute('SELECT id FROM users WHERE email = ?', (email,)).fetchone() is not None:
@@ -46,6 +48,12 @@ def register():
     db.commit()
 
     return jsonify({'message': 'Registration successful.'}), 201
+
+
+@app.route('/images/<path:filename>')
+def serve_image(filename):
+    return send_from_directory('/H:/my website/my-website/src/assets/', filename)
+
 
 @app.route('/login', methods=['POST'])
 def login():

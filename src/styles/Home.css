@@ -78,6 +78,24 @@
 }
 
 
+section {
+  padding: 100px 0;
+}
+
+section h2{
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Poppins", "sans-serif";
+}
+section p{
+  color: #cdd5db;
+}
+
+/* CSS styling for navigation bar */
+
 nav .burger {
   display: none;
   cursor: pointer;

@@ -65,13 +65,18 @@ const LoginPage = ({ setAuthenticated }) => {
                 Login
               </Link>
             </li>
+            <li className="nav-item">
+            <Link to="/feedback" className="nav-link" onClick={closeMenu}>
+              Feedback
+            </Link>
+          </li>
           </ul>
         </div>
       </nav>
       <div>
         <h2>Login Page</h2>
         {errorMessage && <p>{errorMessage}</p>}
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="loginform">
           <label>
             Email:
             <input

@@ -2,7 +2,18 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "../styles/Home.css";
-
+import html from "../assets/html.png";
+import css from "../assets/css.png";
+import js from "../assets/js.png";
+import ML from "../assets/ML.png";
+import Kali from "../assets/kali.png";
+import python from "../assets/python.png";
+import visual from "../assets/python-visual.png";
+import cryptography from "../assets/cryptography.jpeg";
+import Reactlogo from "../assets/logo512.png";
+import SQL from "../assets/sql.png";
+import video from "../assets/video.gif";
+import author from "../assets/author.jpg";
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -62,6 +73,11 @@ function Home() {
                 Login
               </Link>
             </li>
+            <li className="nav-item">
+            <Link to="/feedback" className="nav-link" onClick={closeMenu}>
+              Feedback
+            </Link>
+          </li>
           </ul>
         </div>
       </nav>
@@ -90,7 +106,7 @@ function Home() {
             <h2>Popular Tutorials</h2>
             <div className="tutorial-card">
               <div className="tutorial-card-img">
-                <img src="https://via.placeholder.com/350x200" alt="Tutorial" />
+                <img src={python} alt="python logo" />
               </div>
               <div className="tutorial-card-content">
                 <h3>Python</h3>
@@ -106,7 +122,7 @@ function Home() {
 
             <div className="tutorial-card">
               <div className="tutorial-card-img">
-                <img src="https://via.placeholder.com/350x200" alt="Tutorial" />
+                <img src={ML} alt="machine-learning img" />
               </div>
               <div className="tutorial-card-content">
                 <h3>Python Machine Learning</h3>
@@ -125,7 +141,7 @@ function Home() {
 
             <div className="tutorial-card">
               <div className="tutorial-card-img">
-                <img src="https://via.placeholder.com/350x200" alt="Tutorial" />
+                <img src={js} alt="js-icon" />
               </div>
               <div className="tutorial-card-content">
                 <h3>JavaScript</h3>
@@ -141,7 +157,7 @@ function Home() {
 
             <div className="tutorial-card">
               <div className="tutorial-card-img">
-                <img src="https://via.placeholder.com/350x200" alt="Tutorial" />
+                <img src={visual} alt="python-visualization img" />
               </div>
               <div className="tutorial-card-content">
                 <h3>Python Data Visualization</h3>
@@ -159,7 +175,7 @@ function Home() {
 
             <div className="tutorial-card">
               <div className="tutorial-card-img">
-                <img src="https://via.placeholder.com/350x200" alt="Tutorial" />
+                <img src={SQL} alt="Structred Query Language img" />
               </div>
               <div className="tutorial-card-content">
                 <h3>SQL Database Language </h3>
@@ -175,7 +191,7 @@ function Home() {
 
             <div className="tutorial-card">
               <div className="tutorial-card-img">
-                <img src="https://via.placeholder.com/350x200" alt="Tutorial" />
+                <img src={Kali} alt="Kali linux operating system img" />
               </div>
               <div className="tutorial-card-content">
                 <h3>Kali Linux </h3>
@@ -191,7 +207,7 @@ function Home() {
 
             <div className="tutorial-card">
               <div className="tutorial-card-img">
-                <img src="https://via.placeholder.com/350x200" alt="Tutorial" />
+                <img src={cryptography} alt="cryptography img" />
               </div>
               <div className="tutorial-card-content">
                 <h3>Cryptography</h3>
@@ -209,7 +225,7 @@ function Home() {
             </div>
             <div className="tutorial-card">
               <div className="tutorial-card-img">
-                <img src="./assets/html.png" alt="Tutorial" />
+                <img src={html} alt="html logo" />
               </div>
               <div className="tutorial-card-content">
                 <h3>HTML</h3>
@@ -224,7 +240,7 @@ function Home() {
             </div>
             <div className="tutorial-card">
               <div className="tutorial-card-img">
-                <img src="https://via.placeholder.com/350x200" alt="Tutorial" />
+                <img src={css} alt="CSS logo" />
               </div>
               <div className="tutorial-card-content">
                 <h3>CSS</h3>
@@ -239,7 +255,7 @@ function Home() {
             </div>
             <div className="tutorial-card">
               <div className="tutorial-card-img">
-                <img src="https://via.placeholder.com/350x200" alt="Tutorial" />
+                <img src={Reactlogo} alt="react logo" />
               </div>
               <div className="tutorial-card-content">
                 <h3>React</h3>
@@ -254,11 +270,26 @@ function Home() {
             </div>
           </div>
         </div>
-        {/* <section className="reference" id="reference">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
-                <h2></h2> */}
+        <section className="gifarea">
+          <div className="gif">
+            <div className="tutorial-card-content">
+              <h2>Learn how to code for free </h2>
+              <div className="tutorial-card-img">
+                <img src={video} alt="coding gif" />
+              </div>
+              <p className="gif-text">
+               <i>
+                "The best way to learn to code is to code."
+               </i>
+                  <br/>
+                  <br/>
+                <i>
+                  From great responsibilities comes great opportunities.
+                </i>
+               </p>
+           </div>
+          </div>
+        </section>
       </main>
       <footer className="footer">
         <div className="container">
@@ -319,7 +350,9 @@ function Home() {
                 </li>
               </ul>
             </div>
-            <div className="clearfix"></div>
+            <div className="clearfix">
+             
+            </div>
 
             <hr />
 
@@ -328,6 +361,7 @@ function Home() {
                 &copy; 2021 Hacks and Codes. All Rights Reserved.
               </p>
             </div>
+         
           </div>
           <div className="footer-caret">
             <a href="#top">

@@ -21,7 +21,7 @@
   .registration-container input[type="text"],
   .registration-container input[type="password"]
   .registration-container input[type="email"]
-  .registration-container input[type="file"] {
+  {
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -66,7 +66,7 @@
     margin-bottom: 20px;
   }
   
-  form {
+  .signup-form{
     display: flex;
     flex-direction: column;
     align-items: center;
