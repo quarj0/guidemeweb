@@ -77,7 +77,8 @@
       border: 2px solid #ccc;
     }
   
-    button {
+    .login-button {
+      padding: 5px 10px;
       width: 100%;
     }
   }

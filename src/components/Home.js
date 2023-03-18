@@ -13,7 +13,6 @@ import cryptography from "../assets/cryptography.jpeg";
 import Reactlogo from "../assets/logo512.png";
 import SQL from "../assets/sql.png";
 import video from "../assets/video.gif";
-import author from "../assets/author.jpg";
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -64,18 +63,23 @@ function Home() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/contact" className="nav-link" onClick={closeMenu}>
-                Contact
+              <Link to="/learn" className="nav-link" onClick={closeMenu}>
+                Learn
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/login" className="nav-link" onClick={closeMenu}>
-                Login
+              <Link to="/resouces" className="nav-link" onClick={closeMenu}>
+                Resources
               </Link>
             </li>
             <li className="nav-item">
-            <Link to="/feedback" className="nav-link" onClick={closeMenu}>
-              Feedback
+            <Link to="/projects" className="nav-link" onClick={closeMenu}>
+              Projects
+            </Link>
+          </li>
+            <li className="nav-item">
+            <Link to="/login" className="nav-link" onClick={closeMenu}>
+            Login
             </Link>
           </li>
           </ul>
@@ -316,7 +320,7 @@ function Home() {
                   <Link to="/exercises">Exercises</Link>
                 </li>
                 <li>
-                  <Link to="/contact">Contact Us</Link>
+                  <Link to="/feedback">Feedback</Link>
                 </li>
               </ul>
             </div>

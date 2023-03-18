@@ -5,6 +5,7 @@ import axios from "axios";
 import '../styles/signup.css';
 
 function SignupPage() {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -32,7 +33,7 @@ function SignupPage() {
       return;
     }
     try {
-      const response = await axios.post("http://127.0.0.1:5001/register", {
+      const response = await axios.post("http://127.0.0.1:5000/register", {
         email,
         password,
       });
@@ -85,6 +86,15 @@ function SignupPage() {
     <div>
         <h2>Sign Up</h2>
         <form onSubmit={handleSubmit} className="signup-form" >
+          <div className="form-control">
+            <label htmlFor="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              value={name}
+              onChange={(event) => setName(event.target.value)}
+              autoComplete="name" />
+          </div>
           <div className="form-control">
             <label htmlFor="email">Email</label>
             <input

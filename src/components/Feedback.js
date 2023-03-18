@@ -1,63 +1,40 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
-import { Redirect } from "react-router-dom";
+import { useState } from 'react';
 
-const FeedbacksPage = ({ authenticated }) => {
-  const [feedbacks, setFeedbacks] = useState([]);
-  const [feedbackInput, setFeedbackInput] = useState("");
-  const [redirect, setRedirect] = useState(false);
+import '../styles/Feedback.css';
 
-  useEffect(() => {
-    const fetchFeedbacks = async () => {
-      try {
-        const response = await axios.get("/api/feedbacks");
-        setFeedbacks(response.data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    fetchFeedbacks();
-  }, []);
+function FeedbackForm() {
+  const [feedback, setFeedback] = useState('');
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     try {
-      const response = await axios.post(
-        "/api/feedbacks",
-        { content: feedbackInput },
-        { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } }
-      );
-      setFeedbackInput("");
-      setFeedbacks([response.data, ...feedbacks]);
+      const response = await fetch('http://127.0.0.1:5000/feedback', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ feedback }),
+      });
+      if (response.ok) {
+        // Feedback submitted successfully, do something here (e.g. show a success message)
+        alert('Feedback submitted successfully!');
+        console.log('Feedback submitted successfully!');
+      } else {
+        // Feedback submission failed, handle the error here
+        alert('Feedback submission failed!');
+        console.error('Feedback submission failed!');
+      }
     } catch (error) {
-      console.log(error);
+      // Network error, handle the error here
+      console.error('Network error:', error);
     }
   };
 
-  if (!authenticated) {
-    return <Redirect to="/login" />;
-  }
-
   return (
-    <div>
-      <h1>Feedbacks</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Enter feedback"
-          value={feedbackInput}
-          onChange={(event) => setFeedbackInput(event.target.value)}
-        />
-        <button type="submit">Submit</button>
-      </form>
-      {feedbacks.map((feedback) => (
-        <div key={feedback.id}>
-          <h3>{feedback.user.email}</h3>
-          <p>{feedback.content}</p>
-        </div>
-      ))}
-    </div>
+    <form onSubmit={handleSubmit}>
+      <label htmlFor="feedback">Feedback:</label>
+      <textarea id="feedback" value={feedback} onChange={(e) => setFeedback(e.target.value)} />
+      <button type="submit">Submit</button>
+    </form>
   );
-};
+}
 
-export default FeedbacksPage;
+export default FeedbackForm;

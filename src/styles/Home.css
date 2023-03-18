@@ -103,36 +103,7 @@ nav .burger {
   color: #fff;
 }
 
-@media screen and (max-width: 768px) {
-  nav ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #cdd5db;
-    padding: 20px;
-    z-index: 1;
-  }
 
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  nav .burger {
-    display: block;
-  }
-    .menu-icon {
-      display: block;
-    }
-    .nav-menu {
-      display: none;
-    }
-    .nav-menu.open {
-      display: block;
-    }
-  }
 
 
 /* CSS styling for main content */
@@ -371,7 +342,38 @@ ul.quick-links li a:hover{
 
 
 /* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #cdd5db;
+    padding: 20px;
+    z-index: 1;
+  }
 
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav .burger {
+    display: block;
+  }
+    .menu-icon {
+      display: block;
+    }
+    .nav-menu {
+      display: none;
+    }
+    .nav-menu.open {
+      display: block;
+    }
+  }
+
+/* Footer at smaller screens */
 
 @media screen and (max-width: 767px) {
   .footer {
@@ -418,8 +420,6 @@ ul.quick-links li a:hover{
     margin-left: 0;
   }
 }
-
-
 
 
 /* Media query for smaller screens */

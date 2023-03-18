@@ -6,8 +6,9 @@ import axios from "axios";
 
 import Home from "./components/Home";
 import LoginPage from "./components/Login";
-import FeedbacksPage from "./components/Login";
 import Signup from "./components/Signup";
+import Feedback from "./components/Feedback";
+import Projects from "./components/Projects";
 
 
 import './App.css'
@@ -41,9 +42,10 @@ function App() {
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<LoginPage setAuthenticated={<setAuthenticated />} />} />
-        <Route path="/contact" element={<FeedbacksPage setAuthenticated={<setAuthenticated />} />} />
+        <Route path="/contact" element={<Feedback setAuthenticated={<setAuthenticated />} />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/python" element={<PythonTutorial />} />
+        <Route path="/projects" element={<Projects />} />
         </Routes>
         </Router>
     );
