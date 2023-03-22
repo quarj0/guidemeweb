@@ -1,0 +1,40 @@
+.resources-container {
+    margin: 20px 0;
+  }
+  
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0077cc;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* media query for smaller screens */
+  @media only screen and (max-width: 768px) {
+    h2 {
+      font-size: 24px;
+    }
+    
+    li {
+      font-size: 16px;
+    }
+  }
+  

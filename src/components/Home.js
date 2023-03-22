@@ -30,16 +30,6 @@ function Home() {
     setSearchQuery(e.target.value);
   };
 
-  // const filteredTutorials = (tutorials) => {
-  //   if (searchQuery === "") {
-  //     return tutorials;
-  //   }
-  //   return tutorials.filter((tutorial) =>
-  //     tutorial.title.toLowerCase().includes(searchQuery.toLowerCase())
-  //   );
-  // };
-
-  // const filteredTutorial = filteredTutorials(tutorials);
 
   return (
     <>
@@ -63,8 +53,8 @@ function Home() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/learn" className="nav-link" onClick={closeMenu}>
-                Learn
+              <Link to="/exercise" className="nav-link" onClick={closeMenu}>
+                Quizes
               </Link>
             </li>
             <li className="nav-item">
@@ -73,15 +63,15 @@ function Home() {
               </Link>
             </li>
             <li className="nav-item">
-            <Link to="/projects" className="nav-link" onClick={closeMenu}>
-              Projects
-            </Link>
-          </li>
+              <Link to="/projects" className="nav-link" onClick={closeMenu}>
+                Projects
+              </Link>
+            </li>
             <li className="nav-item">
-            <Link to="/login" className="nav-link" onClick={closeMenu}>
-            Login
-            </Link>
-          </li>
+              <Link to="/login" className="nav-link" onClick={closeMenu}>
+                Login
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
@@ -282,16 +272,12 @@ function Home() {
                 <img src={video} alt="coding gif" />
               </div>
               <p className="gif-text">
-               <i>
-                "The best way to learn to code is to code."
-               </i>
-                  <br/>
-                  <br/>
-                <i>
-                  From great responsibilities comes great opportunities.
-                </i>
-               </p>
-           </div>
+                <i>"The best way to learn to code is to code."</i>
+                <br />
+                <br />
+                <i>From great responsibilities comes great opportunities.</i>
+              </p>
+            </div>
           </div>
         </section>
       </main>
@@ -354,9 +340,7 @@ function Home() {
                 </li>
               </ul>
             </div>
-            <div className="clearfix">
-             
-            </div>
+            <div className="clearfix"></div>
 
             <hr />
 
@@ -365,7 +349,6 @@ function Home() {
                 &copy; 2021 Hacks and Codes. All Rights Reserved.
               </p>
             </div>
-         
           </div>
           <div className="footer-caret">
             <a href="#top">

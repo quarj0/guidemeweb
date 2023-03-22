@@ -9,6 +9,7 @@ import LoginPage from "./components/Login";
 import Signup from "./components/Signup";
 import Feedback from "./components/Feedback";
 import Projects from "./components/Projects";
+import Exercise from "./components/Exercise";
 
 
 import './App.css'
@@ -44,6 +45,7 @@ function App() {
         <Route path="/login" element={<LoginPage setAuthenticated={<setAuthenticated />} />} />
         <Route path="/contact" element={<Feedback setAuthenticated={<setAuthenticated />} />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/exercise" element={<Exercise />} />
         <Route path="/python" element={<PythonTutorial />} />
         <Route path="/projects" element={<Projects />} />
         </Routes>
