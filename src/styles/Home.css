@@ -1,7 +1,7 @@
 /* Navigation Bar */
 .navbar {
   background-color: #ffffff;
-  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,11 +77,6 @@
   color: #f50057;
 }
 
-
-section {
-  padding: 100px 0;
-}
-
 section h2{
   background-color: rgba(0, 0, 0, 0.2);
   font-size: 3.5rem;
@@ -104,36 +99,53 @@ nav .burger {
 }
 
 
-
-
 /* CSS styling for main content */
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+.tutorial-card {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(33.33% - 20px);
+  margin: 10px;
 }
 
-.landing-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.landing-page-header {
+.landing-page-header h1, p{
   text-align: center;
-  margin-bottom: 40px;
 }
 
-.landing-page-header h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+.landing-page-tutorials h2{
+  text-align: center;
+  margin: 50px;
 }
 
-.landing-page-header p {
-  font-size: 1.5rem;
-  margin-bottom: 40px;
+img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
+
+.tutorial-card-img img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: auto;
+}
+
+.gif-text{
+ margin-left: 100px;
+color:slateblue ;
+}
+
+.tutorial-card-content h3{
+  color: #333333;
+  font-family: 'Poppins',"sans-serif"; 
+}
+
+.tutorial-card-content p{
+text-align:  left;
+font-family: "Times New Roman", Times, serif;
+ font-size: 20px;
+}
+
 
 .search-form {
   display: flex;
@@ -164,66 +176,7 @@ main {
   background-color: #45a049;
 }
 
-.landing-page-tutorials {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-}
-
-.tutorial-card {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  background-color: #111c27;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.tutorial-card-img img {
-  width: 100%;
-  border-radius: 8px 8px 0 0;
-}
-
-.tutorial-card-content {
-  padding: 20px;
-}
-
-.tutorial-card-content h3 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.tutorial-card-content p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.btn-start-learning,
-.btn-reference {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 1.2rem;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  margin-right: 10px;
-}
-
-.btn-reference {
-  background-color: #555;
-}
-
-.btn-start-learning:hover,
-.btn-reference:hover {
-  cursor: pointer;
-  background-color: #45a049;
-}
-
-/* Footer design */
-/* Style for desktop screens */
-
+/* CSS styling for footer */
 .footer {
   background-color: #161d24;
   color: #fff;

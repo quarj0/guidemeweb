@@ -12,7 +12,7 @@ import visual from "../assets/python-visual.png";
 import cryptography from "../assets/cryptography.jpeg";
 import Reactlogo from "../assets/logo512.png";
 import SQL from "../assets/sql.png";
-import video from "../assets/video.gif";
+import gif from "../assets/video.gif";
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -53,23 +53,18 @@ function Home() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/exercise" className="nav-link" onClick={closeMenu}>
+              <Link to="/quiz" className="nav-link" onClick={closeMenu}>
                 Quizes
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/resouces" className="nav-link" onClick={closeMenu}>
+              <Link to="/tutorial" className="nav-link" onClick={closeMenu}>
                 Resources
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/projects" className="nav-link" onClick={closeMenu}>
                 Projects
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/login" className="nav-link" onClick={closeMenu}>
-                Login
               </Link>
             </li>
           </ul>
@@ -269,7 +264,7 @@ function Home() {
             <div className="tutorial-card-content">
               <h2>Learn how to code for free </h2>
               <div className="tutorial-card-img">
-                <img src={video} alt="coding gif" />
+              <img src={gif} alt="coding gif" className="gif" />
               </div>
               <p className="gif-text">
                 <i>"The best way to learn to code is to code."</i>
