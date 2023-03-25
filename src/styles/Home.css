@@ -141,7 +141,6 @@ color:slateblue ;
 
 .btn-start-learning, .btn-reference{
   text-decoration: none;
-  /* justify-content: center; */
   margin: 0 15px 0 15px;
   padding: 10px;
   background-color: #1d7a22;
@@ -306,8 +305,7 @@ ul.quick-links li a:hover{
 
 .footer-caret {
   position: relative;
-  bottom: 30px;
-  left: 600px;
+  left: 90%;
   font-size: 40px;
   color: #f1ecec;
 }

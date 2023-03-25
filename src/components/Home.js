@@ -18,6 +18,7 @@ function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
 
+  
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
   };

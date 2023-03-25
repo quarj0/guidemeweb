@@ -51,6 +51,7 @@
 @media only screen and (min-width: 768px) {
   /* Add your CSS styles here */
   .sidebar {
+    display: block;
     width: 25%;
     margin-right: 2%;
   }
@@ -63,12 +64,24 @@
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   /* Add your CSS styles here */
   .sidebar {
-    display: none;
+    display: block;
   }
   .main-content {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 768px){
+  .sidebar {
+    display: block;
+  }
+  .sidebar.collapsed {
+    display: block;
+  }
+  .sidebar-toggle {
+    display: block;
+  }
+
 
 /* Styles for screens smaller than 480px */
 @media only screen and (max-width: 479px) {
@@ -79,4 +92,5 @@
   .main-content {
     width: 100%;
   }
+}
 }

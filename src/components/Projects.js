@@ -67,7 +67,7 @@ const Projects = () => {
             </li>
             <li className="nav-item">
               <Link to="/quizzes" className="nav-link" onClick={closeMenu}>
-                Quizzes{" "}
+                Quiz{" "}
               </Link>
             </li>
             <li className="nav-item">
@@ -120,8 +120,8 @@ const Projects = () => {
                 <p>
                   We are a team of passionate Python developers who love sharing
                   our knowledge with others. Our mission is to provide
-                  high-quality tutorials, exercises, and references to help
-                  anyone learn and master Python programming.
+                  high-quality tutorials, Quizzes, and references to help anyone
+                  learn and master Python programming.
                 </p>
               </div>
               <div className="col-md-3 col-sm-6">
@@ -134,7 +134,7 @@ const Projects = () => {
                     <Link to="/references">References</Link>
                   </li>
                   <li>
-                    <Link to="/exercises">Exercises</Link>
+                    <Link to="/Quiz">Quizzes</Link>
                   </li>
                   <li>
                     <Link to="/feedback">Feedback</Link>

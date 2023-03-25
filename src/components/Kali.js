@@ -85,7 +85,7 @@ const LinuxSidebar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/exercise" className="nav-link" onClick={closeMenu}>
+              <Link to="/quiz" className="nav-link" onClick={closeMenu}>
                 Quizzes
               </Link>
             </li>

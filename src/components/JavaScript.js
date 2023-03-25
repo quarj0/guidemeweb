@@ -56,109 +56,166 @@ const Python = () => {
       </nav>
       <div className="container">
         <div className="sidebar">
-          <h3>Python</h3>
+          <h3>JavaScript</h3>
           <ul>
             <li>
-              <Link to="/python/introduction">Introduction to Python</Link>
+              <Link to="/javascript/introduction">
+                Introduction to JavaScript
+              </Link>
               <ul>
                 <li>
-                  <Link to="/python/basic-syntax">Basic Syntax</Link>
+                  <Link to="/javascript/basic-syntax">Basic Syntax</Link>
                 </li>
                 <li>
-                  <Link to="/python/variables-data-types">
+                  <Link to="/javascript/variables-data-types">
                     Variables and Data Types
                   </Link>
                 </li>
                 <li>
-                  <Link to="/python/operators">Operators</Link>
+                  <Link to="/javascript/operators">Operators</Link>
+                </li>
+                <li>
+                  <Link to="/javascript/comments">Comments</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link to="/python/control-structures">Control Structures</Link>
-              <ul>
-                <li>
-                  <Link to="/python/if-else">If/Else Statements</Link>
-                </li>
-                <li>
-                  <Link to="/python/loops">Loops</Link>
-                </li>
-                <li>
-                  <Link to="/python/functions">Functions</Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link to="/python/lists-tuples-dictionaries">
-                Lists, Tuples, and Dictionaries
+              <Link to="/javascript/control-structures">
+                Control Structures
               </Link>
               <ul>
                 <li>
-                  <Link to="/python/python-lists">Python Lists</Link>
+                  <Link to="/javascript/if-else">If/Else Statements</Link>
                 </li>
                 <li>
-                  <Link to="/python/python-tuples">Python Tuples</Link>
+                  <Link to="/javascript/loops">Loops</Link>
                 </li>
                 <li>
-                  <Link to="/python/python-dictionaries">
-                    Python Dictionaries
+                  <Link to="/javascript/functions">Functions</Link>
+                </li>
+                <li>
+                  <Link to="/javascript/switch">Switch Statements</Link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Link to="/javascript/arrays">Arrays</Link>
+              <ul>
+                <li>
+                  <Link to="/javascript/javascript-arrays">
+                    JavaScript Arrays
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/javascript/creating-arrays">Creating Arrays</Link>
+                </li>
+                <li>
+                  <Link to="/javascript/accessing-arrays">
+                    Accessing Arrays
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/javascript/array-methods">Array Methods</Link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Link to="/javascript/objects">Objects</Link>
+              <ul>
+                <li>
+                  <Link to="/javascript/javascript-objects">
+                    JavaScript Objects
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/javascript/creating-objects">
+                    Creating Objects
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/javascript/accessing-objects">
+                    Accessing Objects
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/javascript/object-methods">Object Methods</Link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Link to="/javascript/functions">Functions</Link>
+              <ul>
+                <li>
+                  <Link to="/javascript/javascript-functions">
+                    JavaScript Functions
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/javascript/defining-functions">
+                    Defining Functions
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/javascript/function-arguments">
+                    Function Arguments
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/javascript/function-parameters">
+                    Function Parameters
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/javascript/function-return">Function Return</Link>
+                </li>
+                <li>
+                  <Link to="/javascript/function-scopes">Function Scopes</Link>
+                </li>
+                <li>
+                  <Link to="/javascript/callback-functions">
+                    Callback Functions
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/javascript/function-closures">
+                    Function Closures
                   </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link to="/python/modules">Modules</Link>
+              <Link to="/javascript/events">Events</Link>
               <ul>
                 <li>
-                  <Link to="/python/files-io">Files I/O</Link>
-                </li>
-                <li>
-                  <Link to="/python/exception-handling">
-                    Exception Handling
+                  <Link to="/javascript/javascript-events">
+                    JavaScript Events
                   </Link>
                 </li>
+                <li>
+                  <Link to="/javascript/event-handlers">Event Handlers</Link>
+                </li>
+                <li>
+                  <Link to="/javascript/event-listeners">Event Listeners</Link>
+                </li>
               </ul>
             </li>
             <li>
-              <Link to="/python/object-oriented-programming">
-                Object-Oriented Programming
-              </Link>
+              <Link to="/javascript/ajax">AJAX</Link>
               <ul>
                 <li>
-                  <Link to="/python/classes-objects">Classes and Objects</Link>
+                  <Link to="/javascript/xmlhttprequest">XMLHttpRequest</Link>
                 </li>
                 <li>
-                  <Link to="/python/inheritance">Inheritance</Link>
-                </li>
-                <li>
-                  <Link to="/python/polymorphism">Polymorphism</Link>
+                  <Link to="/javascript/fetch-api">Fetch API</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link to="/python/regular-expressions">Regular Expressions</Link>
-            </li>
-            <li>
-              <Link to="/python/testing">Testing in Python</Link>
-            </li>
-            <li>
-              <Link to="/python/advanced-topics">Advanced Topics</Link>
-              <ul>
-                <li>
-                  <Link to="/python/decorators">Decorators</Link>
-                </li>
-                <li>
-                  <Link to="/python/generators">Generators</Link>
-                </li>
-                <li>
-                  <Link to="/python/closures">Closures</Link>
-                </li>
-              </ul>
+              <Link to="/javascript/jquery">jQuery</Link>
             </li>
           </ul>
         </div>
-        <div className="main">
-        </div>
+        <div className="main"></div>
       </div>
       <footer className="footer">
         <div className="container">

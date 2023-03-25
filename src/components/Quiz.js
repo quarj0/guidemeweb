@@ -96,7 +96,7 @@ const Quiz = ({ quizData }) => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/quizzes" className="nav-link" onClick={closeMenu}>
+              <Link to="/quiz" className="nav-link" onClick={closeMenu}>
                 Quizzes{" "}
               </Link>
             </li>
@@ -187,7 +187,7 @@ const Quiz = ({ quizData }) => {
                   <Link to="/references">References</Link>
                 </li>
                 <li>
-                  <Link to="/exercises">Exercises</Link>
+                  <Link to="/quiz">Quizzes</Link>
                 </li>
                 <li>
                   <Link to="/feedback">Feedback</Link>
