@@ -1,93 +1,82 @@
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
+.python-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #f2f2f2;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+}
+
+.python-sidebar h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.python-sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.python-sidebar li {
+  margin-bottom: 5px;
+}
+
+.python-sidebar a {
+  display: block;
+  padding: 5px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.python-sidebar a:hover {
+  background-color: #ddd;
+}
+
+.python-sidebar .subtopic {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.python-sidebar .exercise {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Styles for screens larger than or equal to 768px */
+@media only screen and (min-width: 768px) {
+  /* Add your CSS styles here */
   .sidebar {
     width: 25%;
+    margin-right: 2%;
   }
-  
-  .sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  .main-content {
+    width: 72%;
   }
-  
-  .sidebar ul li {
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
-  
-  .sidebar ul li.active {
-    background-color: #ccc;
-  }
-  
-  .content {
-    width: 70%;
-  }
-  
-  .content h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  
-  .content p {
-    margin-bottom: 20px;
-  }
-  
-  .code-editor {
-    margin-bottom: 20px;
-  }
-  
-  .code-editor textarea {
-    width: 100%;
-    height: 300px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    font-size: 16px;
-    font-family: monospace;
-  }
-  
-  .output {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 20px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-  
-  .navigation {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .navigation button {
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .navigation button:first-of-type {
-    margin-right: 10px;
-  }
-  
+}
 
-   .python-tutorial {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    /*font-family: Arial, sans-serif;*/
-    /*font-size: 16px;*/
-    /*line-height: 1.5;*/
-    /*color: #333;*/
-    /*background-color: #f4f4f4;*/
-    /*box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);*/
+/* Styles for screens larger than or equal to 480px and smaller than 768px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* Add your CSS styles here */
+  .sidebar {
+    display: none;
   }
-  
+  .main-content {
+    width: 100%;
+  }
+}
+
+/* Styles for screens smaller than 480px */
+@media only screen and (max-width: 479px) {
+  /* Add your CSS styles here */
+  .sidebar {
+    display: none;
+  }
+  .main-content {
+    width: 100%;
+  }
+}

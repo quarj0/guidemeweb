@@ -1,13 +1,9 @@
-import React, {useState} from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import "../styles/kali.css";
 
-import tutorials from "../components/Tutorials";
-
-function Tutorials({ searchQuery }) {
-  const filteredTutorials = tutorials.filter((tutorial) =>
-    tutorial.title.toLowerCase().includes(searchQuery.toLowerCase())
-  );
-
+const LinuxSidebar = () => {
+  const [selectedTopic, setSelectedTopic] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMenuClick = () => {
@@ -18,8 +14,57 @@ function Tutorials({ searchQuery }) {
     setMenuOpen(false);
   };
 
+  const topics = [
+    {
+      name: "Basic Commands",
+      subtopics: [
+        {
+          name: "Navigation",
+          exercises: [
+            "Use `cd` to navigate to your home directory.",
+            "Use `ls` to list the contents of the current directory.",
+            "Use `pwd` to print the current working directory.",
+          ],
+        },
+        {
+          name: "File Management",
+          exercises: [
+            "Use `touch` to create a new empty file.",
+            "Use `cp` to copy a file to a new location.",
+            "Use `rm` to delete a file.",
+          ],
+        },
+      ],
+    },
+    {
+      name: "System Administration",
+      subtopics: [
+        {
+          name: "Users and Groups",
+          exercises: [
+            "Use `useradd` to create a new user account.",
+            "Use `passwd` to change a user's password.",
+            "Use `groupadd` to create a new group.",
+          ],
+        },
+        {
+          name: "Permissions",
+          exercises: [
+            "Use `chmod` to change a file's permissions.",
+            "Use `chown` to change a file's owner.",
+            "Use `chgrp` to change a file's group.",
+          ],
+        },
+      ],
+    },
+  ];
+
+  const handleTopicClick = (index) => {
+    setSelectedTopic(index);
+  };
+
   return (
-    <div className="tutorial-list">
+    <>
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMenu}>
@@ -40,7 +85,7 @@ function Tutorials({ searchQuery }) {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/quiz" className="nav-link" onClick={closeMenu}>
+              <Link to="/exercise" className="nav-link" onClick={closeMenu}>
                 Quizzes
               </Link>
             </li>
@@ -57,26 +102,39 @@ function Tutorials({ searchQuery }) {
           </ul>
         </div>
       </nav>
-        <div className="landing-page-tutorials">
-      {filteredTutorials.map((tutorial, index) => (
-        <div className="tutorial-card" key={index}>
-          <div className="tutorial-card-img">
-            <img src={tutorial.image} alt={tutorial.title} />
-          </div>
-          <div className="tutorial-card-content">
-            <h3>{tutorial.title}</h3>
-            <p>{tutorial.description}</p>
-            <Link to={tutorial.link} className="btn-start-learning">
-              Start Learning
-            </Link>
-            <Link to={tutorial.reference} className="btn-reference">
-              Reference
-            </Link>
-          </div>
-        </div>
-      ))}
-    </div>
-    <footer className="footer">
+      <div className="sidebar-container">
+        <h2>Linux</h2>
+        <ul className="topics-list">
+          {topics.map((topic, index) => (
+            <li
+              key={index}
+              className={`topic-item ${
+                selectedTopic === index ? "selected" : ""
+              }`}
+              onClick={() => handleTopicClick(index)}
+            >
+              {topic.name}
+            </li>
+          ))}
+        </ul>
+        {selectedTopic !== null && (
+          <ul className="subtopics-list">
+            {topics[selectedTopic].subtopics.map((subtopic, index) => (
+              <li key={index} className="subtopic-item">
+                <h3>{subtopic.name}</h3>
+                <ul className="exercises-list">
+                  {subtopic.exercises.map((exercise, index) => (
+                    <li key={index} className="exercise-item">
+                      {exercise}
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+      <footer className="footer">
         <div className="container">
           <div className="row">
             <div className="col-md-6 col-sm-12">
@@ -98,7 +156,7 @@ function Tutorials({ searchQuery }) {
                   <Link to="/references">References</Link>
                 </li>
                 <li>
-                  <Link to="/quiz">Quizzes</Link>
+                  <Link to="/exercises">Exercises</Link>
                 </li>
                 <li>
                   <Link to="/feedback">Feedback</Link>
@@ -146,14 +204,14 @@ function Tutorials({ searchQuery }) {
             </div>
           </div>
           <div className="footer-caret">
-            <a href="/">
+            <a href="">
               <i className="fas fa-caret-up" size="50x"></i>
             </a>
           </div>
         </div>
       </footer>
-    </div>
+    </>
   );
-}
+};
 
-export default Tutorials;
+export default LinuxSidebar;

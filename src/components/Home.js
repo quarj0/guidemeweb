@@ -30,7 +30,6 @@ function Home() {
     setSearchQuery(e.target.value);
   };
 
-
   return (
     <>
       <nav className="navbar">
@@ -53,8 +52,8 @@ function Home() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/quiz" className="nav-link" onClick={closeMenu}>
-                Quizes
+              <Link to="/exercise" className="nav-link" onClick={closeMenu}>
+                Exercise
               </Link>
             </li>
             <li className="nav-item">
@@ -101,7 +100,7 @@ function Home() {
                 <h3>Python</h3>
                 <p>Learn Python programming language.</p>
                 <Link to="/python" className="btn-start-learning">
-                  Start Learning
+                  Learn
                 </Link>
                 <Link to="/reference" className="btn-reference">
                   Reference
@@ -119,10 +118,10 @@ function Home() {
                   Learn how to build machine learning models using Python
                   programming language.
                 </p>
-                <Link to="#start" className="btn-start-learning">
-                  Start Learning
+                <Link to="/python" className="btn-start-learning">
+                  Learn
                 </Link>
-                <Link to="#reference" className="btn-reference">
+                <Link to="/reference" className="btn-reference">
                   Reference
                 </Link>
               </div>
@@ -136,7 +135,7 @@ function Home() {
                 <h3>JavaScript</h3>
                 <p>Learn JavaScript programming language.</p>
                 <Link to="/javascript" className="btn-start-learning">
-                  Start Learning
+                  Learn
                 </Link>
                 <Link to="/reference" className="btn-reference">
                   Reference
@@ -153,10 +152,10 @@ function Home() {
                 <p>
                   Learn how to visualize data using Python programming language.
                 </p>
-                <Link to="#start" className="btn-start-learning">
-                  Start Learning
+                <Link to="/python-visualization" className="btn-start-learning">
+                  Learn
                 </Link>
-                <Link to="#reference" className="btn-reference">
+                <Link to="/reference" className="btn-reference">
                   Reference
                 </Link>
               </div>
@@ -169,10 +168,10 @@ function Home() {
               <div className="tutorial-card-content">
                 <h3>SQL Database Language </h3>
                 <p>Learn the basics of SQL programming language.</p>
-                <Link to="#start" className="btn-start-learning">
-                  Start Learning
+                <Link to="/sql" className="btn-start-learning">
+                  Learn
                 </Link>
-                <Link to="#reference" className="btn-reference">
+                <Link to="/reference" className="btn-reference">
                   Reference
                 </Link>
               </div>
@@ -185,10 +184,10 @@ function Home() {
               <div className="tutorial-card-content">
                 <h3>Kali Linux </h3>
                 <p>Learn the basics of Kali Linux operating system.</p>
-                <Link to="#start" className="btn-start-learning">
-                  Start Learning
+                <Link to="/kali-linux" className="btn-start-learning">
+                  Learn
                 </Link>
-                <Link to="#reference" className="btn-reference">
+                <Link to="/reference" className="btn-reference">
                   Reference
                 </Link>
               </div>
@@ -204,10 +203,10 @@ function Home() {
                   Learn how to perform cryptography using Kali Linux operating
                   system.
                 </p>
-                <Link to="#start" className="btn-start-learning">
-                  Start Learning
+                <Link to="/cryptography" className="btn-start-learning">
+                  Learn
                 </Link>
-                <Link to="#reference" className="btn-reference">
+                <Link to="/reference" className="btn-reference">
                   Reference
                 </Link>
               </div>
@@ -219,10 +218,10 @@ function Home() {
               <div className="tutorial-card-content">
                 <h3>HTML</h3>
                 <p>Learn how to create web pages using HTML.</p>
-                <Link to="#start" className="btn-start-learning">
-                  Start Learning
+                <Link to="/html" className="btn-start-learning">
+                  Learn
                 </Link>
-                <Link to="#reference" className="btn-reference">
+                <Link to="/reference" className="btn-reference">
                   Reference
                 </Link>
               </div>
@@ -234,10 +233,10 @@ function Home() {
               <div className="tutorial-card-content">
                 <h3>CSS</h3>
                 <p>Learn how to style web pages using CSS.</p>
-                <Link to="#start" className="btn-start-learning">
-                  Start Learning
+                <Link to="/css" className="btn-start-learning">
+                  Learn
                 </Link>
-                <Link to="#reference" className="btn-reference">
+                <Link to="/reference" className="btn-reference">
                   Reference
                 </Link>
               </div>
@@ -249,10 +248,10 @@ function Home() {
               <div className="tutorial-card-content">
                 <h3>React</h3>
                 <p>Learn how to create web applications using React.</p>
-                <Link to="#start" className="btn-start-learning">
-                  Start Learning
+                <Link to="/react" className="btn-start-learning">
+                  Learn
                 </Link>
-                <Link to="#reference" className="btn-reference">
+                <Link to="/reference" className="btn-reference">
                   Reference
                 </Link>
               </div>
@@ -264,7 +263,7 @@ function Home() {
             <div className="tutorial-card-content">
               <h2>Learn how to code for free </h2>
               <div className="tutorial-card-img">
-              <img src={gif} alt="coding gif" className="gif" />
+                <img src={gif} alt="coding gif" className="gif" />
               </div>
               <p className="gif-text">
                 <i>"The best way to learn to code is to code."</i>
@@ -346,7 +345,7 @@ function Home() {
             </div>
           </div>
           <div className="footer-caret">
-            <a href="#top">
+            <a href="/">
               <i className="fas fa-caret-up" size="50x"></i>
             </a>
           </div>

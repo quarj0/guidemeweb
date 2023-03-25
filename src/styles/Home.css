@@ -107,6 +107,7 @@ nav .burger {
   margin: 10px;
 }
 
+
 .landing-page-header h1, p{
   text-align: center;
 }
@@ -128,6 +129,9 @@ img{
   margin-right: auto;
   width: 60%;
   height: auto;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.6);
+  margin-top: 40px;
+
 }
 
 .gif-text{
@@ -135,13 +139,38 @@ img{
 color:slateblue ;
 }
 
+.btn-start-learning, .btn-reference{
+  text-decoration: none;
+  /* justify-content: center; */
+  margin: 0 15px 0 15px;
+  padding: 10px;
+  background-color: #1d7a22;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+
+.tutorial-card-content{
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.btn-start-learning:hover, .btn-reference:hover{
+  background-color: #0a8d10;
+  transition: all 0.15 ease-in-out;
+}
+
+
 .tutorial-card-content h3{
   color: #333333;
   font-family: 'Poppins',"sans-serif"; 
+  text-align: center;
 }
 
 .tutorial-card-content p{
-text-align:  left;
+text-align:  start;
 font-family: "Times New Roman", Times, serif;
  font-size: 20px;
 }
@@ -444,6 +473,21 @@ ul.quick-links li a:hover{
 
   .search-container input[type="text"] {
     width: 150px;
+  }
+
+  .btn-start-learning, .btn-reference{
+    text-decoration: none;
+    margin: 8px;
+    padding: 10px;
+    background-color: #1d7a22;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .btn-start-learning:hover, .btn-reference:hover{
+    background-color: #169c1d;
+    transition: all 0.15s ease-in-out;
   }
 
 }
