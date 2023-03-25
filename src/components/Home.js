@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import "../styles/Home.css";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import js from "../assets/js.png";
@@ -13,10 +12,13 @@ import cryptography from "../assets/cryptography.jpeg";
 import Reactlogo from "../assets/logo512.png";
 import SQL from "../assets/sql.png";
 import gif from "../assets/video.gif";
+import SearchBar from "./SearchBar";
+import tutorials from "./Tutorials";
+import "../styles/Home.css";
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
 
   
   const handleMenuClick = () => {
@@ -27,8 +29,16 @@ function Home() {
     setMenuOpen(false);
   };
 
-  const handleSearchInput = (e) => {
-    setSearchQuery(e.target.value);
+  const handleSearch = (searchText) => {
+    const results = tutorials.filter((tutorial) =>
+      tutorial.title.toLowerCase().includes(searchText.toLowerCase())
+    );
+
+    const filteredResults = results.filter((result) =>
+      result.title.toLowerCase().includes(searchText.toLowerCase())
+    );
+
+    setSearchResults(filteredResults);
   };
 
   return (
@@ -78,17 +88,15 @@ function Home() {
               Learn a skill with our online tutorials, references, and
               exercises.
             </p>
-            <form className="search-form">
-              <input
-                type="text"
-                placeholder="Search..."
-                onChange={handleSearchInput}
-                value={searchQuery}
-              />
-              <button type="submit">
-                <i className="fa fa-search"></i>
-              </button>
-            </form>
+           <SearchBar onSearch={handleSearch} />
+            <ul>
+              {searchResults.map((result) => (
+                <li key={result.title}>
+                  <Link to={result.link}>{result.title}</Link>
+                </li>
+              ))}
+              
+            </ul>
           </div>
 
           <div className="landing-page-tutorials">
