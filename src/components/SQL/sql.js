@@ -62,11 +62,11 @@ const Lesson = ({ topicIndex, subtopicIndex }) => {
         <ul>
           {topics.map((topic, index) => (
             <li key={index}>
-              <a href="#">{topic.title}</a>
+              <a href="#title">{topic.title}</a>
               <ul>
                 {topic.subtopics.map((subtopic, index) => (
                   <li key={index}>
-                    <a href="#">{subtopic.title}</a>
+                    <a href="#title">{subtopic.title}</a>
                   </li>
                 ))}
               </ul>

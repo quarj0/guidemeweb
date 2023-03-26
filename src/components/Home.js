@@ -32,7 +32,7 @@ function Home() {
   const handleSearch = (searchText) => {
     if (searchText.length === 0) {
       setSearchResults([]);
-      return alert("Please enter a valid search term"); // <--- added this line
+      return // <--- added this line
     }
     const results = tutorials.filter((tutorial) =>
       tutorial.title.toLowerCase().includes(searchText.toLowerCase())
