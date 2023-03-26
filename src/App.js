@@ -4,16 +4,16 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
 import Home from "./components/Home";
-import Projects from "./components/Projects";
-import Python from "./components/Python";
-import Kali from "./components/Kali";
-import JavaScript from './components/JavaScript';
-import HTML from './components/html';
-import CSS from './components/CSS';
-import SQL from './components/sql';
-import ML from './components/machine-learning';
-import ReactJs from './components/react';
-import Cryptography from './components/cryptography';
+import Projects from "./components/Projects/Projects";
+import Python from "./components/python/Python";
+import Kali from "./components/Kali/Kali";
+import JavaScript from './components/JavaScript/JavaScript';
+import HTML from './components/HTML/html';
+import CSS from './components/CSS/CSS';
+import SQL from './components/SQL/sql';
+import ML from './components/python/machine-learning';
+import ReactJs from './components/React/React'
+import Cryptography from  './components/Kali/cryptography'
 
 import './App.css';
 import Quiz from "./components/Quiz";

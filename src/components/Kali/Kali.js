@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/kali.css";
+import "../Kali/kali.css"
 
 const LinuxSidebar = () => {
   const [selectedTopic, setSelectedTopic] = useState(null);
@@ -204,7 +204,7 @@ const LinuxSidebar = () => {
             </div>
           </div>
           <div className="footer-caret">
-            <a href="">
+            <a href="top">
               <i className="fas fa-caret-up" size="50x"></i>
             </a>
           </div>

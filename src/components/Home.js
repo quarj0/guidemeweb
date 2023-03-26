@@ -30,6 +30,10 @@ function Home() {
   };
 
   const handleSearch = (searchText) => {
+    if (searchText.length === 0) {
+      setSearchResults([]);
+      return alert("Please enter a valid search term"); // <--- added this line
+    }
     const results = tutorials.filter((tutorial) =>
       tutorial.title.toLowerCase().includes(searchText.toLowerCase())
     );
@@ -93,7 +97,7 @@ function Home() {
               {searchResults.map((result) => (
                 <>
                   <div className="tutorial-card-img">
-                    <img src={result.image} alt="img" width={20} />
+                    <img src={result.image} alt="img"/>
                   </div>
                   <div key={result.title} className="tutorial-card-content">
                     <h3>{result.title}</h3>

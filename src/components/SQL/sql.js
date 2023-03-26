@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import '../styles/sql.css';
+import '../SQL/sql.css'
 
 const topics = [
   {
