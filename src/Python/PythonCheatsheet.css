@@ -1,0 +1,47 @@
+/* PythonCheatsheet.css */
+
+.cheatsheet-container {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .cheatsheet-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .cheatsheet-subheader {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .cheatsheet-list ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .cheatsheet-list li {
+    margin-bottom: 10px;
+  }
+  
+  .cheatsheet-list li:before {
+    content: "• ";
+    color: #666;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  .cheatsheet-list li ul {
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+  

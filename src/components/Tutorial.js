@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
-import PythonSideBar from '../Python/PythonSideBar'
 
+import tutorials from "../components/Tutorials";
 
+function Tutorials({ searchQuery }) {
+  const filteredTutorials = tutorials.filter((tutorial) =>
+    tutorial.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
-function Python() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-
-  
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
   };
@@ -18,7 +19,7 @@ function Python() {
   };
 
   return (
-    <>
+    <div className="tutorial-list">
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMenu}>
@@ -39,8 +40,8 @@ function Python() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/exercise" className="nav-link" onClick={closeMenu}>
-                Exercise
+              <Link to="/quiz" className="nav-link" onClick={closeMenu}>
+                Quizzes
               </Link>
             </li>
             <li className="nav-item">
@@ -56,10 +57,26 @@ function Python() {
           </ul>
         </div>
       </nav>
-      <main>
-      <PythonSideBar />
-      </main>
-      <footer className="footer">
+        <div className="landing-page-tutorials">
+      {filteredTutorials.map((tutorial, index) => (
+        <div className="tutorial-card" key={index}>
+          <div className="tutorial-card-img">
+            <img src={tutorial.image} alt={tutorial.title} />
+          </div>
+          <div className="tutorial-card-content">
+            <h3>{tutorial.title}</h3>
+            <p>{tutorial.description}</p>
+            <Link to={tutorial.link} className="btn-start-learning">
+              Start Learning
+            </Link>
+            <Link to={tutorial.reference} className="btn-reference">
+              Reference
+            </Link>
+          </div>
+        </div>
+      ))}
+    </div>
+    <footer className="footer">
         <div className="container">
           <div className="row">
             <div className="col-md-6 col-sm-12">
@@ -81,7 +98,7 @@ function Python() {
                   <Link to="/references">References</Link>
                 </li>
                 <li>
-                  <Link to="/exercises">Exercises</Link>
+                  <Link to="/quiz">Quizzes</Link>
                 </li>
                 <li>
                   <Link to="/feedback">Feedback</Link>
@@ -135,7 +152,8 @@ function Python() {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   );
 }
-export default Python;
+
+export default Tutorials;

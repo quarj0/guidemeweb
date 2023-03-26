@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // import pythonImg from "../assets/python.png";
 
-import "../styles/Python.css";
 
 const Python = () => {
   const [menuOpen, setMenuOpen] = useState(false);

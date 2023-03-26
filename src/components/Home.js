@@ -14,13 +14,13 @@ import SQL from "../assets/sql.png";
 import gif from "../assets/video.gif";
 import SearchBar from "./SearchBar";
 import tutorials from "./Tutorials";
+
 import "../styles/Home.css";
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchResults, setSearchResults] = useState([]);
 
-  
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
   };
@@ -88,15 +88,23 @@ function Home() {
               Learn a skill with our online tutorials, references, and
               exercises.
             </p>
-           <SearchBar onSearch={handleSearch} />
-            <ul>
+            <SearchBar onSearch={handleSearch} />
+            <div className="searched-result">
               {searchResults.map((result) => (
-                <li key={result.title}>
-                  <Link to={result.link}>{result.title}</Link>
-                </li>
+                <>
+                  <div className="tutorial-card-img">
+                    <img src={result.image} alt="img" width={20} />
+                  </div>
+                  <div key={result.title} className="tutorial-card-content">
+                    <h3>{result.title}</h3>
+                    <p>{result.description} </p>
+                    <Link className="btn-start-learning" to={result.link}>
+                      {result.title}
+                    </Link>
+                  </div>
+                </>
               ))}
-              
-            </ul>
+            </div>
           </div>
 
           <div className="landing-page-tutorials">

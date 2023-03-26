@@ -10,6 +10,7 @@ function SearchBar({ onSearch }) {
   const handleSearch = (event) => {
     event.preventDefault();
     onSearch(searchText);
+    setSearchText('');
   };
 
   return (
@@ -18,13 +19,6 @@ function SearchBar({ onSearch }) {
         type="text"
         value={searchText}
         onChange={(event) => setSearchText(event.target.value)}
-        onKeyUp={
-            (event) => {
-                if (event.key === 'Enter') {
-                    onSearch(searchText)
-                }
-            }
-        }
         placeholder="Search for a tutorial..."
       />
       <button type="submit">Search</button>
