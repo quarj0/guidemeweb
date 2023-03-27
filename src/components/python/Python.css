@@ -1,39 +1,42 @@
-
-  .Pymain{
+.main {
     display: flex;
     height: 100vh;
-  }
-  
-  
-  .Pycontainer{
+}
+
+
+.Pycontainer {
     flex-grow: 1;
     padding: 2em;
-    background-image: radial-gradient(rgba(19, 16, 16, 0.4), rgba(44, 39, 39, 0.8));
+    background-image: radial-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .8));
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-  }
-  .Pytitle{
+}
+
+.Pytitle {
     font-size: 3em;
-  }
-  .info{
+}
+
+.info {
     font-size: 1.1em;
     letter-spacing: 1px;
     line-height: 1.5;
     margin: 1.5em;
     color: rgb(224, 224, 224);
-  }
-  .btnGroup{
-  display: flex;
+}
+
+.btnGroup {
+    display: flex;
     justify-content: center;
     margin: 1.5em;
-  }
+}
 
-.Prev, .Next{
-    margin: 10px 20px; 
+.Prev,
+.Next {
+    margin: 10px 20px;
     border: none;
     outline: none;
     padding: .75em 1em;
@@ -43,66 +46,80 @@
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 3px;
-    background-color: rgb(134, 49, 0);
+    background-color: rgb(27, 134, 0);
     color: #fff;
     cursor: pointer;
 }
 
-.Next{
-   margin-left: 30%;
+.Next {
+    margin-left: 30%;
 }
 
-  .sidebar{
+.Prev:hover,
+.Next:hover{
+    background-color: rgb(35, 175, 0);
+}
+
+.sidebar {
     width: 260px;
     flex-shrink: 0;
-    background-color: rgb(17, 50, 88);
+    background-color: rgba(22, 22, 22, 1);
     height: 100%;
     overflow: auto;
-  }
+}
 
-  .sidebar-item{
+
+.sidebar-item {
     padding: .75em 1em;
     display: block;
     transition: background-color .15s;
     border-radius: 5px;
-  }
-  .sidebar-item:hover{
+}
+
+.sidebar-item:hover {
     background-color: rgba(255, 255, 255, .1);
-  }
-  
-  .sidebar-title{
+}
+
+.sidebar-title {
     display: flex;
     font-size: 1.2em;
     justify-content: space-between;
-  }
-  .sidebar-title span i{
+}
+
+.sidebar-title span i {
     display: inline-block;
     width: 1.5em;
-  }
-  .sidebar-title .toggle-btn{
+}
+
+.sidebar-title .toggle-btn {
     cursor: pointer;
     transition: transform .3s;
-  }
-  .sidebar-item.open > .sidebar-title .toggle-btn{
+}
+
+.sidebar-item.open>.sidebar-title .toggle-btn {
     transform: rotate(180deg);
-  }
-  .sidebar-content{
+}
+
+.sidebar-content {
     padding-top: .25em;
     height: 0;
     overflow: hidden;
-  }
-  .sidebar-item.open > .sidebar-content{
+}
+
+.sidebar-item.open>.sidebar-content {
     height: auto;
-  }
-  
-  .sidebar-item.plain{
-    color: #f80c0c;
+}
+
+.sidebar-item.plain {
+    color: #d40f0f;
     text-decoration: none;
-  }
-  .sidebar-item.plain:hover{
+}
+
+.sidebar-item.plain:hover {
     text-decoration: underline;
-  }
-  .sidebar-item.plain i{
+}
+
+.sidebar-item.plain i {
     display: inline-block;
     width: 1.7em;
-  }
+}

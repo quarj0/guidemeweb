@@ -1,126 +1,180 @@
 [
   {
-    "title": "General",
-    "icon": "bi-gear-fill",
+    "title": "Python",
     "childrens": [
       {
-        "title": "Home",
-        "icon": "bi-house-fill",
-        "path": "/"
+        "title": "Introduction",
+        "path": "/python/introduction"
+        
       },
       {
-        "title": "About",
-        "icon": "bi-info-circle-fill",
-        "path": "/about"
-      },
-      {
-        "title": "Contact",
-        "icon": "bi-phone-fill",
+        "title": "Variables and Data Types",
+        "path": "/python/variables-and-data-types",
         "childrens": [
           {
-            "title": "Facebook",
-            "icon": "bi-facebook"
+            "title": "Variables",
+            "path": "/python/variables-and-data-types/variables"
           },
           {
-            "title": "Twitter",
-            "icon": "bi-twitter"
+            "title": "Data Types",
+            "path": "/python/variables-and-data-types/data-types"
           },
           {
-            "title": "Instagram",
-            "icon": "bi-instagram"
+            "title": "Numbers",
+            "path": "/python/variables-and-data-types/numbers"
+          },
+          {
+            "title": "Strings",
+            "path": "/python/variables-and-data-types/strings"
+          },
+          {
+            "title": "Booleans",
+            "path": "/python/variables-and-data-types/booleans"
+          },
+          {
+            "title": "Lists",
+            "path": "/python/variables-and-data-types/lists"
+          },
+          {
+            "title": "Tuples",
+            "path": "/python/variables-and-data-types/tuples"
+          },
+          {
+            "title": "Dictionaries",
+            "path": "/python/variables-and-data-types/dictionaries"
+          },
+          {
+            "title": "Sets",
+            "path": "/python/variables-and-data-types/sets"
+          },
+          {
+            "title": "Operators and Expressions",
+            "path": "/python/operators"
+          }
+          
+        ]
+        
+      },
+         
+      {
+        "title": "Control Structures",
+        "path":"/python/control-structures",
+        "childrens": [
+          {
+            "title": "Control Statements",
+            "path":"/python/control-structures/condtional-statemments"
+          },
+          {
+            "title": "If/Else Statements",
+            "path": "/python/control-structures/if-else-statements"
+          },
+          {
+            "title": "Loops",
+            "path": "/python/control-structures/loops"
+          },
+          {
+            "title": "For Loops",
+            "path": "/python/control-structures/for-loops"
+          },
+          {
+            "title": "While Loops",
+            "path": "/python/control-structures/while-loops"
           }
         ]
       },
       {
-        "title": "FAQ",
-        "icon": "bi-question-circle-fill"
+        "title": "Short Test",
+        "path": "/python/basics/short-quiz"
       }
     ]
   },
   {
-    "title": "Account",
-    "icon": "bi-info-circle-fill",
+    "title": "Functions",
+    "path": "/python/functions",
     "childrens": [
       {
-        "title": "Login",
-        "path": "/login"
+        "title": "Modules and Packages",
+        "path": "/python/modules"
       },
       {
-        "title": "Register",
-        "path": "/register"
+        "title": "Libraries",
+        "path": "/python/libraries"
       },
       {
-        "title": "Forgot Password",
-        "path": "/forgot-password"
+        "title": "Exception handling",
+        "path": "/python/exceptions"
       },
       {
-        "title": "Reset Password",
-        "path": "/reset-password"
+        "title": "Try/Except",
+        "path": "/python/try-and-except"
+      },
+      {
+        "title": "Raising Exceptions",
+        "path": "/python/raise-exceptions"
+      },
+      {
+        "title": "Short Test",
+        "path" : "/python/functions/short-quiz"
       }
     ]
   },
   {
-    "title": "Profile",
-    "icon": "bi-person-fill",
+    "title": "Regular Expressions",
+    "path": "/python/regular-expressions",
     "childrens": [
       {
-        "title": "Profile",
-        "path": "/profile"
+        "title": "Basic Syntax",
+        "path": "/python/basic-syntax"
       },
       {
-        "title": "Settings",
-        "childrens": [
-          {
-            "title": "Account",
-            "path": "/settings/account"
-          },
-          {
-            "title": "Billing",
-            "childrens": [
-              {
-                "title": "Payment",
-                "path": "/settings/billing/payment"
-              },
-              {
-                "title": "Subscription",
-                "path": "/settings/billing/subscription"
-              }
-            ]
-          },
-          {
-            "title": "Notifications",
-            "path": "/settings/notifications"
-          }
-        ]
+        "title": "Metacharacters",
+        "path": "/python/metacharacters"
       },
       {
-        "title": "Logout",
-        "path": "/logout"
+       "title": "Methods",
+       "path": "/python/methods"
       }
     ]
   },
   {
-    "title": "Advance",
-    "icon": "bi-view-list",
+    "title": "Object-Oriented Programming",
+    "path": "/python/oop",
     "childrens": [
       {
-        "title": "Search",
-        "path": "/search"
+        "title": "Classes",
+        "path": "/python/classes"
       },
       {
-        "title": "History",
-        "path": "/history"
+        "title": "Objects",
+        "path": "/python/objects"
+      },
+      {
+        "title": "Inheritance",
+        "path": "/python/inheritance"
+      },
+      {
+        "title": "Polymorphism",
+        "path": "/python/polymorphism"
       }
     ]
   },
   {
-    "title": "Support",
-    "icon": "bi-question-circle-fill",
-    "path": "/support"
+    "title": "Debugging and Testing",
+    "path": "/python/testing-debugging",
+    "childrens": [
+      {
+        "title": "Debugging techniques",
+        "path": "/python/debugging-techniques"
+      },
+      {
+        "title": "Unit Testing",
+        "path": "/python/unit-testing"
+      }
+    ]
   },
   {
-    "title": "Report Bug",
-    "icon": "bi-bug",
-    "path": "/report-bug"
+    "title": "Home",
+    "icon": "bi-house-fill",    
+    "path": "/"
   }
 ]
