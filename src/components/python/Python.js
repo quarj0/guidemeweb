@@ -1,35 +1,55 @@
-// import { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
 
-import Sidebar from "../python/SideBar";
-import "./Python.css";
+import './Python.css';
+
+function Sidebar() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  function toggleSidebar() {
+    setIsSidebarOpen(!isSidebarOpen);
+  }
+
+  return (
+    <div className="sidebar">
+      <div className="sidebar-toggle" onClick={toggleSidebar}>
+        <i className={`fas ${isSidebarOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
+      </div>
+      {isSidebarOpen && (
+        <div className="sidebar-content">
+          {/* Add your sidebar content here */}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function Navbar() {
+  return (
+    <div className="navbar">
+      {/* Add your navbar content here */}
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <div className="footer">
+      {/* Add your footer content here */}
+    </div>
+  );
+}
 
 function Python() {
-
-  
   return (
-   
-      <div className="Pymain">
-        <Sidebar />
-        <div className="Pycontainer">
-          <h1 className="Pytitle">My React App</h1>
-          <p className="info">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <div className="btnGroup">
-            <Link className="Prev">
-              <i className="bi-chevron-left"></i>Previous
-            </Link>
-            <Link className="Next">
-              Next<i className="bi-chevron-right"></i>
-            </Link>
-          </div>
-        </div>
+    <div className="app">
+      <Sidebar />
+      <div className="main-content">
+        <Navbar />
+        {/* Add your main content here */}
+        <Footer />
       </div>
-
+    </div>
   );
-};
+}
+
 export default Python;
