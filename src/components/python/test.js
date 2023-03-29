@@ -2,8 +2,34 @@ import React, { useState } from "react";
 import "./pythonshortest.css";
 
 const questions = [
-  // questions array goes here
-];
+    {
+      question: "What is the output of print(3 + 4 * 5)?",
+      answers: [
+        { text: "35", correct: false },
+        { text: "23", correct: true },
+        { text: "19", correct: false },
+        { text: "None of the above", correct: false },
+      ],
+    },
+    {
+      question: "What is the output of print('hello' + 'world')?",
+      answers: [
+        { text: "helloworld", correct: true },
+        { text: "hello world", correct: false },
+        { text: "hello+world", correct: false },
+        { text: "None of the above", correct: false },
+      ],
+    },
+    {
+      question: "What is the output of print(type('hello'))?",
+      answers: [
+        { text: "<class 'str'>", correct: true },
+        { text: "<class 'int'>", correct: false },
+        { text: "<class 'bool'>", correct: false },
+        { text: "None of the above", correct: false },
+      ],
+    },
+  ];
 
 const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
