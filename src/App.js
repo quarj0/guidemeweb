@@ -14,6 +14,7 @@ import SQL from './components/SQL/sql';
 import ML from './components/python/machine-learning';
 import ReactJs from './components/React/React'
 import Cryptography from  './components/Kali/cryptography'
+import Test from './components/python/test';
 import './App.css';
 import Quiz from "./components/Quiz";
 
@@ -31,7 +32,7 @@ function App() {
         <Route path="/html" element={<HTML />} />
         <Route path="/ml" element={<ML />} />
         <Route path="/react" element={<ReactJs />} />
-        <Route path="/python" element={<Python />} />
+        <Route path="/python/test" element={<Test />} />
         <Route path="/kali-linux" element={<Kali />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/cryptography" element={<Cryptography />} />
