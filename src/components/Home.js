@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import html from "../assets/html.png";
 import css from "../assets/css.png";
@@ -20,6 +20,7 @@ import "../styles/Home.css";
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchResults, setSearchResults] = useState([]);
+  const navigate = useNavigate(false);
 
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
@@ -30,10 +31,23 @@ function Home() {
   };
 
   const handleSearch = (searchText) => {
+    
     if (searchText.length === 0) {
       setSearchResults([]);
       return // <--- added this line
     }
+
+    if (searchText.length < 3) {
+      setSearchResults([]);
+      return // <--- added this line
+    }
+
+    if (searchText.length ===0 || searchText.length < 3 || searchText === " ") {
+      return
+    }else{
+      navigate(`${searchText}`);
+    }
+
     const results = tutorials.filter((tutorial) =>
       tutorial.title.toLowerCase().includes(searchText.toLowerCase())
     );
@@ -44,6 +58,7 @@ function Home() {
 
     setSearchResults(filteredResults);
   };
+
 
   return (
     <>

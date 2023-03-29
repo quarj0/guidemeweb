@@ -1,0 +1,55 @@
+.topic-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 600px;
+  }
+  
+  .topic-section h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .topic-section img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  .topic-section p {
+    margin: 10px 0;
+  }
+  
+  .topic-section .resources {
+    margin-top: 20px;
+  }
+  
+  .topic-section .resources h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .topic-section .resources ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .topic-section .resources li {
+    margin-bottom: 10px;
+  }
+  
+  .topic-section a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .topic-section a:hover {
+    text-decoration: underline;
+  }
+  
