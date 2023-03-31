@@ -16,7 +16,7 @@ import ReactJs from './components/React/React'
 import Cryptography from  './components/Kali/cryptography'
 import Test from './components/python/test';
 import './App.css';
-import Quiz from "./components/Quiz";
+import Quiz from "./components/Quiz/pyquestion";
 
 
 function App() {

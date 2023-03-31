@@ -42,7 +42,7 @@ function Home() {
       return // <--- added this line
     }
 
-    if (searchText.length ===0 || searchText.length < 3 || searchText === " ") {
+    if (searchText.length === 0 & searchText.length < 3 & searchText === " ") {
       return
     }else{
       navigate(`${searchText}`);

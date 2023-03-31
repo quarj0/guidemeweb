@@ -17,10 +17,6 @@
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 800px;
-  width: 90%;
-  animation: slide-in 0.5s ease-out;
-  transition: transform 0.2s ease-out;
-  transform: translateX(-100%);
 }
 
 .score-container {
@@ -34,10 +30,7 @@
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 800px;
-  width: 90%;
-  animation: slide-in 0.5s ease-out;
-  transition: transform 0.2s ease-out;
-  transform: translateX(-100%);
+
 }
 
 .question-container.show {

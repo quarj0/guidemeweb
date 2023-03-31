@@ -1,44 +1,43 @@
 import React, { useState } from "react";
+import "./Quiz.css";
 
-function Quiz({ questions }) {
+function Quiz({ questions, onComplete }) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(-1);
   const [showResult, setShowResult] = useState(false);
+  const [score, setScore] = useState(0);
 
   const handleAnswerClick = (answerIndex) => {
     setSelectedAnswerIndex(answerIndex);
   };
 
   const handleNextQuestionClick = () => {
+    if (selectedAnswerIndex === questions[currentQuestionIndex].answerIndex) {
+      setScore(score + 1);
+    }
     setSelectedAnswerIndex(-1);
-    setCurrentQuestionIndex(currentQuestionIndex + 1);
-  };
-
-  const handleShowResultClick = () => {
-    setShowResult(true);
+    if (currentQuestionIndex === questions.length - 1) {
+      setShowResult(true);
+    } else {
+      setCurrentQuestionIndex(currentQuestionIndex + 1);
+    }
   };
 
   const handleRestartClick = () => {
     setCurrentQuestionIndex(0);
     setSelectedAnswerIndex(-1);
     setShowResult(false);
+    setScore(0);
   };
 
   const getScore = () => {
-    let score = 0;
-    for (let i = 0; i < questions.length; i++) {
-      if (questions[i].choices[selectedAnswerIndex[i]] === questions[i].answer) {
-        score++;
-      }
-    }
     return `${score} / ${questions.length}`;
   };
 
-  const isLastQuestion = currentQuestionIndex === questions.length - 1;
   const currentQuestion = questions[currentQuestionIndex];
 
   return (
-    <div>
+    <div className="quiz-container">
       <h1>{currentQuestion.question}</h1>
       <ul>
         {currentQuestion.choices.map((choice, index) => (
@@ -52,14 +51,15 @@ function Quiz({ questions }) {
         ))}
       </ul>
       {selectedAnswerIndex > -1 && !showResult && (
-        <button onClick={isLastQuestion ? handleShowResultClick : handleNextQuestionClick}>
-          {isLastQuestion ? "Show result" : "Next question"}
+        <button onClick={handleNextQuestionClick}>
+          {currentQuestionIndex === questions.length - 1 ? "Finish" : "Next Question"}
         </button>
       )}
       {showResult && (
         <div>
           <p>Your score: {getScore()}</p>
           <button onClick={handleRestartClick}>Restart</button>
+          <button onClick={onComplete}>Back to Lessons</button>
         </div>
       )}
     </div>
