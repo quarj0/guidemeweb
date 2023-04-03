@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import LazyLoad from 'react-lazyload';
 
 import html from "../assets/html.png";
 import css from "../assets/css.png";
@@ -20,7 +21,6 @@ import "../styles/Home.css";
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchResults, setSearchResults] = useState([]);
-  const navigate = useNavigate(false);
 
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
@@ -42,11 +42,7 @@ function Home() {
       return // <--- added this line
     }
 
-    if (searchText.length === 0 & searchText.length < 3 & searchText === " ") {
-      return
-    }else{
-      navigate(`${searchText}`);
-    }
+
 
     const results = tutorials.filter((tutorial) =>
       tutorial.title.toLowerCase().includes(searchText.toLowerCase())
@@ -62,6 +58,7 @@ function Home() {
 
   return (
     <>
+    <LazyLoad>
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMenu}>
@@ -112,11 +109,15 @@ function Home() {
               {searchResults.map((result) => (
                 <>
                   <div className="tutorial-card-img">
+                    <LazyLoad height={200}>
                     <img src={result.image} alt="img"/>
+                    </LazyLoad>
                   </div>
                   <div key={result.title} className="tutorial-card-content">
+                  <LazyLoad>
                     <h3>{result.title}</h3>
                     <p>{result.description} </p>
+                      </LazyLoad>
                     <Link className="btn-start-learning" to={result.link}>
                       {result.title}
                     </Link>
@@ -387,6 +388,7 @@ function Home() {
           </div>
         </div>
       </footer>
+      </LazyLoad>
     </>
   );
 }
