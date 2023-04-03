@@ -11,8 +11,8 @@ import HTML from './components/HTML/html';
 import CSS from './components/CSS/CSS';
 import SQL from './components/SQL/sql';
 import ML from './components/Machine Learning/machine-learning';
-import ReactJs from './components/React/React'
-import Cryptography from  './components/Kali/cryptography'
+import ReactJs from './components/React/React';
+import Cryptography from  './components/Kali/cryptography';
 
 import './App.css';
 
