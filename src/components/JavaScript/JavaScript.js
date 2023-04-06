@@ -2,7 +2,7 @@ import React from "react";
 import JsNavPage from "./JsNav";
 import  Sidebar  from "./Sidebar";
 
-const JavaScript = () => {
+const JavaScriptMainPage = () => {
   return (
     <>
       <section>
@@ -26,4 +26,4 @@ const JavaScript = () => {
   );
 };
 
-export default JavaScript;
+export default JavaScriptMainPage;

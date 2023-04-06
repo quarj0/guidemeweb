@@ -1,0 +1,34 @@
+.refh1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    }
+    
+    .reful {
+    list-style: none;
+    margin: 2rem 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    
+    .refli {
+    margin: 1rem;
+    }
+    
+    .refa {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid #333;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    }
+    
+    .refa:hover {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    }    

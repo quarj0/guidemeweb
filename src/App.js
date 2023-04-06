@@ -13,6 +13,8 @@ import SQL from './components/SQL/sql';
 import ML from './components/Machine Learning/machine-learning';
 import ReactJs from './components/React/React';
 import Cryptography from  './components/Kali/cryptography';
+import ReferencesPage from "./components/references";
+import HtmlReferences from "./components/HTML/htmlreferences";
 
 import './App.css';
 
@@ -32,6 +34,8 @@ function App() {
         <Route path="/kali-linux" element={<Kali />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/cryptography" element={<Cryptography />} />
+        <Route path="/reference" element={<ReferencesPage />} />
+        <Route path="/htmlreferences" element={<HtmlReferences />} />
         </Routes>
         </Router>
     );
