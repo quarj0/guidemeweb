@@ -1,10 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
+import HtmlTable from "./htmltable";
 import "./html.css";
 
 const HtmlReferences = () => {
-
   const [menuOpen, setMenuOpen] = React.useState(false);
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
@@ -13,10 +13,9 @@ const HtmlReferences = () => {
     setMenuOpen(false);
   };
 
-
   return (
     <>
-     <nav className="navbar">
+      <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMenu}>
             GUIDE ME LEARN
@@ -53,71 +52,119 @@ const HtmlReferences = () => {
           </ul>
         </div>
       </nav>
-    <div>
-      <h1 className='refh1'>HTML References</h1>
-      <ul className='reful'>
-        <li className='refli'><a className='refa' href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Element Reference</a></li>
-        <li className='refli'><a className='refa' href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes">HTML Attribute Reference</a></li>
-        <li className='refli'><a className='refa' href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">HTML Global Attributes Reference</a></li>
-        <li className='refli'><a className='refa' href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">HTML anchor Element Reference</a></li>
-        <li className='refli'><a className='refa' href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">HTML img Element Reference</a></li>
-        <li className='refli'><a className='refa' href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">HTML form Element Reference</a></li>
-      </ul>
-    </div>
-    <footer className="footer">
+      {/* References table */}
+      <HtmlTable />
+
+      <div>
+        <h1 className="refh1">Learn more</h1>
+        <ul className="reful">
+          <li className="refli">
+            <a
+              className="refa"
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+              target="_blank"
+              rel="noreferrer"
+            >
+              HTML Element Reference
+            </a>
+          </li>
+          <li className="refli">
+            <a
+              className="refa"
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes"
+              target="_blank"
+              rel="noreferrer"
+            >
+              HTML Attribute Reference
+            </a>
+          </li>
+          <li className="refli">
+            <a
+              className="refa"
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes"
+              target="_blank"
+              rel="noreferrer"
+            >
+              HTML Global Attributes Reference
+            </a>
+          </li>
+          <li className="refli">
+            <a
+              className="refa"
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"
+              target="_blank"
+              rel="noreferrer"
+            >
+              HTML anchor Element Reference
+            </a>
+          </li>
+          <li className="refli">
+            <a
+              className="refa"
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img"
+              target="_blank"
+              rel="noreferrer"
+            >
+              HTML img Element Reference
+            </a>
+          </li>
+          <li className="refli">
+            <a
+              className="refa"
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form"
+              target="_blank"
+              rel="noreferrer"
+            >
+              HTML form Element Reference
+            </a>
+          </li>
+        </ul>
+      </div>
+      <footer className="footer">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 col-sm-12">
-              <h4>About Us</h4>
-              <p>
-                We are a team of passionate Python developers who love sharing
-                our knowledge with others. Our mission is to provide
-                high-quality tutorials, exercises, and references to help anyone
-                learn and master Python programming.
-              </p>
-            </div>
-            <div className="col-md-3 col-sm-6">
-              <h4>Quick Links</h4>
-              <ul className="quick-links">
-                <li>
-                  <Link to="/tutorial">Tutorials</Link>
-                </li>
-                <li>
-                  <Link to="/references">References</Link>
-                </li>
-                <li>
-                  <Link to="/exercises">Exercises</Link>
-                </li>
-                <li>
-                  <Link to="/feedback">Feedback</Link>
-                </li>
-              </ul>
-            </div>
+            <div className="col-md-6 col-sm-12"></div>
+
             <div className="col-md-3 col-sm-6">
               <h4>Follow Us</h4>
               <ul className="social-icons">
                 <li>
-                  <a href="https://www.facebook.com/quarjo.young/" title="contact me via facebook">
+                  <a
+                    href="https://www.facebook.com/quarjo.young/"
+                    title="contact me via facebook"
+                  >
                     <i className="fab fa-facebook"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/quarjowusu/" title="contact me via twitter">
+                  <a
+                    href="https://twitter.com/quarjowusu/"
+                    title="contact me via twitter"
+                  >
                     <i className="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://instagram.com/quarjowusu/" title="contact me via instagram">
+                  <a
+                    href="https://instagram.com/quarjowusu/"
+                    title="contact me via instagram"
+                  >
                     <i className="fab fa-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/quarjo/" title="contact me via linkedin">
+                  <a
+                    href="https://www.linkedin.com/in/quarjo/"
+                    title="contact me via linkedin"
+                  >
                     <i className="fab fa-linkedin"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/hacks-and-codes" title="contact me via github">
+                  <a
+                    href="https://github.com/hacks-and-codes"
+                    title="contact me via github"
+                  >
                     <i className="fab fa-github"></i>
                   </a>
                 </li>
@@ -134,7 +181,7 @@ const HtmlReferences = () => {
             </div>
           </div>
           <div className="footer-caret">
-            <a href="/">
+            <a href="/htmlreference">
               <i className="fas fa-caret-up" size="50x"></i>
             </a>
           </div>
@@ -142,6 +189,6 @@ const HtmlReferences = () => {
       </footer>
     </>
   );
-}
+};
 
 export default HtmlReferences;

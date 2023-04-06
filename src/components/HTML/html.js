@@ -139,37 +139,37 @@ const HTML = () => {
         <p className="p-texts">The &lt;a&gt; tag defines a hyperlink, which is used to link from one page to another.</p>
         <p className="p-texts">By default, a browser displays a &lt;a&gt; element as a block element (like &lt;div&gt;), with a line break before and after the element.</p>
     </section>
-    <section>
+    <section className="html-images">
         <h1>HTML Images</h1>
         <p className="p-texts">HTML images are defined with the &lt;img&gt; tag.</p>
         <p className="p-texts">The &lt;img&gt; tag defines an image in an HTML page.</p>
         <p className="p-texts">By default, a browser displays a &lt;img&gt; element as a block element (like &lt;div&gt;), with a line break before and after the element.</p>
     </section>
-    <section>
+    <section className="html-tables">
         <h1>HTML Tables</h1>
         <p className="p-texts">HTML tables are defined with the &lt;table&gt; tag.</p>
         <p className="p-texts">The &lt;table&gt; tag defines an HTML table.</p>
         <p className="p-texts">By default, a browser displays a &lt;table&gt; element as a block element (like &lt;div&gt;), with a line break before and after the element.</p>
     </section>
-    <section>
+    <section className="html-list">
         <h1>HTML Lists</h1>
         <p className="p-texts">HTML lists are defined with the &lt;ul&gt; tag.</p>
         <p className="p-texts">The &lt;ul&gt; tag defines an unordered (bulleted) list.</p>
         <p className="p-texts">By default, a browser displays a &lt;ul&gt; element as a block element (like &lt;div&gt;), with a line break before and after the element.</p>
     </section>
-    <section>
+    <section className="html-blocks">
         <h1>HTML Blocks</h1>
         <p className="p-texts">HTML blocks are defined with the &lt;div&gt; tag.</p>
         <p className="p-texts">The &lt;div&gt; tag defines a division or a section in an HTML document.</p>
         <p className="p-texts">By default, a browser displays a &lt;div&gt; element as a block element (like &lt;div&gt;), with a line break before and after the element.</p>
     </section>
-    <section>
+    <section className="html-classes">
         <h1>HTML Classes</h1>
         <p className="p-texts">HTML classes are defined with the &lt;class&gt; tag.</p>
         <p className="p-texts">The &lt;class&gt; tag defines a class in an HTML document.</p>
         <p className="p-texts">By default, a browser displays a &lt;class&gt; element as a block element (like &lt;div&gt;), with a line break before and after the element.</p>
     </section>
-    <section>
+    <section className="html-ids">
         <h1>HTML Ids</h1>
         <p className="p-texts">HTML ids are defined with the &lt;id&gt; tag.</p>
         <p className="p-texts">The &lt;id&gt; tag defines an id in an HTML document.</p>

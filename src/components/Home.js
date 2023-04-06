@@ -130,7 +130,7 @@ function Home() {
                   <Link to="/python" className="btn-start-learning">
                     Learn
                   </Link>
-                  <Link to="/reference" className="btn-reference">
+                  <Link to="/pythonreference" className="btn-reference">
                     Reference
                   </Link>
                 </div>
@@ -149,7 +149,7 @@ function Home() {
                   <Link to="/python" className="btn-start-learning">
                     Learn
                   </Link>
-                  <Link to="/reference" className="btn-reference">
+                  <Link to="/machine-learning-reference" className="btn-reference">
                     Reference
                   </Link>
                 </div>
@@ -168,7 +168,7 @@ function Home() {
                   <Link to="/javascript" className="btn-start-learning">
                     Learn
                   </Link>
-                  <Link to="/reference" className="btn-reference">
+                  <Link to="/javascript-reference" className="btn-reference">
                     Reference
                   </Link>
                 </div>
@@ -190,7 +190,7 @@ function Home() {
                   >
                     Learn
                   </Link>
-                  <Link to="/reference" className="btn-reference">
+                  <Link to="/py-visual-reference" className="btn-reference">
                     Reference
                   </Link>
                 </div>
@@ -208,7 +208,7 @@ function Home() {
                   <Link to="/sql" className="btn-start-learning">
                     Learn
                   </Link>
-                  <Link to="/reference" className="btn-reference">
+                  <Link to="/sql-reference" className="btn-reference">
                     Reference
                   </Link>
                 </div>
@@ -226,7 +226,7 @@ function Home() {
                   <Link to="/kali-linux" className="btn-start-learning">
                     Learn
                   </Link>
-                  <Link to="/reference" className="btn-reference">
+                  <Link to="/kali-linux-reference" className="btn-reference">
                     Reference
                   </Link>
                 </div>
@@ -245,7 +245,7 @@ function Home() {
                   <Link to="/cryptography" className="btn-start-learning">
                     Learn
                   </Link>
-                  <Link to="/reference" className="btn-reference">
+                  <Link to="/crptography-reference" className="btn-reference">
                     Reference
                   </Link>
                 </div>
@@ -262,7 +262,7 @@ function Home() {
                   <Link to="/html" className="btn-start-learning">
                     Learn
                   </Link>
-                  <Link to="/reference" className="btn-reference">
+                  <Link to="/htmlreference" className="btn-reference">
                     Reference
                   </Link>
                 </div>
@@ -279,7 +279,7 @@ function Home() {
                   <Link to="/css" className="btn-start-learning">
                     Learn
                   </Link>
-                  <Link to="/reference" className="btn-reference">
+                  <Link to="/cssreference" className="btn-reference">
                     Reference
                   </Link>
                 </div>
@@ -296,7 +296,7 @@ function Home() {
                   <Link to="/react" className="btn-start-learning">
                     Learn
                   </Link>
-                  <Link to="/reference" className="btn-reference">
+                  <Link to="/react-reference" className="btn-reference">
                     Reference
                   </Link>
                 </div>

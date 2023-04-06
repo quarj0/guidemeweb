@@ -15,6 +15,7 @@ import ReactJs from './components/React/React';
 import Cryptography from  './components/Kali/cryptography';
 import ReferencesPage from "./components/references";
 import HtmlReferences from "./components/HTML/htmlreferences";
+import CSSReference from "./components/CSS/cssreference";
 
 import './App.css';
 
@@ -36,6 +37,7 @@ function App() {
         <Route path="/cryptography" element={<Cryptography />} />
         <Route path="/reference" element={<ReferencesPage />} />
         <Route path="/htmlreferences" element={<HtmlReferences />} />
+        <Route path="/cssreference" element={<CSSReference />} />
         </Routes>
         </Router>
     );

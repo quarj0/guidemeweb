@@ -1,3 +1,13 @@
+/* .grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
+
+.html-header{
+  text-align: center;
+  
+}
+
 table {
     border-collapse: collapse;
     width: 100%;
