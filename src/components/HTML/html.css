@@ -1,0 +1,94 @@
+.html-references {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .refh1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .reful {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .refli {
+    margin-bottom: 10px;
+  }
+  
+  .refa {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  .refa:hover {
+    text-decoration: underline;
+  }
+
+  /* default styling for all .learnings */
+section .learning {
+  background-color: lightgray;
+  margin: 20px;
+  padding: 10px;
+  color: black;
+}
+
+/* styling for .learnings with "Introduction" or "HTML Elements" headings */
+.introduction:nth-of-type(1),
+.introduction:nth-of-type(2) {
+  background-color: lightblue;
+}
+
+/* styling for .learnings with "HTML Attributes" or "HTML Headings" headings */
+.htmlattributes:nth-of-type(3),
+.htmlattributes:nth-of-type(4) {
+  background-color: lightgreen;
+}
+
+/* styling for .learnings with "HTML Paragraphs" or "HTML Styles" headings */
+.htmlparagraphs:nth-of-type(5),
+.htmlparagraphs:nth-of-type(6) {
+  background-color: lightpink;
+}
+
+/* styling for .learnings with "HTML Formatting" or "HTML Quotations" headings */
+.htmlformatting:nth-of-type(7),
+.htmlformatting:nth-of-type(8) {
+  background-color: lightyellow;
+}
+
+/* styling for .learnings with "HTML Comments" heading */
+.htmlcomments:nth-of-type(9) {
+  background-color: lightsalmon;
+}
+
+
+
+.p-texts {
+  color: black;
+}
+
+/* media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .learning {
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  h1 {
+    font-size: 1.2em;
+  }
+  
+  p {
+    font-size: 0.9em;
+  }
+  
+  ul {
+    font-size: 0.8em;
+  }
+}
+
+  
