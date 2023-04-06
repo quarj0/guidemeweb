@@ -40,11 +40,7 @@ const ReferencesPage = () => {
                 Exercise
               </Link>
             </li>
-            <li className="nav-item">
-              <Link to="/tutorial" className="nav-link" onClick={closeMenu}>
-                Resources
-              </Link>
-            </li>
+            
             <li className="nav-item">
               <Link to="/projects" className="nav-link" onClick={closeMenu}>
                 Projects
@@ -97,6 +93,38 @@ const ReferencesPage = () => {
               JavaScript Reference
             </a>
           </li>
+          <li className="refli">
+            <a className="refa" href="/mlreference">
+              Machine Learning Reference
+            </a>
+          </li>
+
+          <li className="refli">
+            <a className="refa" href="/gitreference">
+              Git Reference
+            </a>
+          </li>
+          <li className="refli">
+            <a className="refa" href="/csharpreference">
+              C# Reference
+            </a>
+          </li>
+          <li className="refli">
+            <a className="refa" href="/cplusreference">
+              C++ Reference
+            </a>
+          </li>
+          <li className="refli">
+            <a className="refa" href="/eference">
+              C Reference
+            </a>
+          </li>
+          <li className="refli">
+            <a className="refa" href="/dsreference">
+              Data Science Reference
+            </a>
+          </li>
+
         </ul>
       </div>
       <footer className="footer">
