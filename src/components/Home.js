@@ -80,8 +80,8 @@ function Home() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/tutorial" className="nav-link" onClick={closeMenu}>
-                  Resources
+                <Link to="/reference" className="nav-link" onClick={closeMenu}>
+                  Reference
                 </Link>
               </li>
               <li className="nav-item">
@@ -262,7 +262,7 @@ function Home() {
                   <Link to="/html" className="btn-start-learning">
                     Learn
                   </Link>
-                  <Link to="/htmlreference" className="btn-reference">
+                  <Link to="/htmlreferences" className="btn-reference">
                     Reference
                   </Link>
                 </div>
@@ -296,7 +296,7 @@ function Home() {
                   <Link to="/react" className="btn-start-learning">
                     Learn
                   </Link>
-                  <Link to="/react-reference" className="btn-reference">
+                  <Link to="/reactreference" className="btn-reference">
                     Reference
                   </Link>
                 </div>

@@ -14,7 +14,7 @@ import ML from './components/Machine Learning/machine-learning';
 import ReactJs from './components/React/React';
 import Cryptography from  './components/Kali/cryptography';
 import ReferencesPage from "./components/references";
-import HtmlReferences from "./components/HTML/htmlreferences";
+import HtmlReferences from "./components/HTML/htmlreference";
 import CSSReference from "./components/CSS/cssreference";
 
 import './App.css';

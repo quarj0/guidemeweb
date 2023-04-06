@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import HtmlTable from "./htmltable";
 import "./html.css";
 
-const HtmlReferences = () => {
+const HtmlReference = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
@@ -40,8 +40,8 @@ const HtmlReferences = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/tutorial" className="nav-link" onClick={closeMenu}>
-                Resources
+              <Link to="/reference" className="nav-link" onClick={closeMenu}>
+                Reference
               </Link>
             </li>
             <li className="nav-item">
@@ -191,4 +191,4 @@ const HtmlReferences = () => {
   );
 };
 
-export default HtmlReferences;
+export default HtmlReference;

@@ -71,13 +71,8 @@ const Projects = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/tutorial" className="nav-link" onClick={closeMenu}>
-                Resources
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/projects" className="nav-link" onClick={closeMenu}>
-                Projects
+              <Link to="/reference" className="nav-link" onClick={closeMenu}>
+                References
               </Link>
             </li>
           </ul>
