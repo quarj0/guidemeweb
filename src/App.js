@@ -17,8 +17,6 @@ import ReferencesPage from "./components/references";
 import HtmlReferences from "./components/HTML/htmlreference";
 import CSSReference from "./components/CSS/cssreference";
 
-import './App.css';
-
 
 function App() {
     return (

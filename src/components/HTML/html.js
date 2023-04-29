@@ -42,8 +42,8 @@ const HTML = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/tutorial" className="nav-link" onClick={closeMenu}>
-                Resources
+              <Link to="/reference" className="nav-link" onClick={closeMenu}>
+                References
               </Link>
             </li>
             <li className="nav-item">

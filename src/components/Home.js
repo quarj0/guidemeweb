@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import LazyLoad from "react-lazyload";
 
+import git from "../assets/git.jpg";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import js from "../assets/js.png";
@@ -96,24 +97,23 @@ function Home() {
           <div className="landing-page">
             <div className="landing-page-header">
               <h1>Welcome To Guide Me Learn</h1>
+              <p>Get a skill today and be a better you tomorrow.</p>
               <p>
-              Get a skill today and be a better you tomorrow.
-              </p>
-              <p>
-                Start your journey to learn programming languages, web development, data science, and more.
+                Start your journey to learn programming languages, web
+                development, data science, and more.
               </p>
               <SearchBar onSearch={handleSearch} />
               <div className="searched-result">
                 {searchResults.map((result) => (
-                    <div key={result.title} className="tutorial-card-content">
-                      <LazyLoad>
-                        <h3>{result.title}</h3>
-                        <p>{result.description} </p>
-                      </LazyLoad>
-                      <Link className="btn-start-learning" to={result.link}>
-                        {result.title}
-                      </Link>
-                    </div>
+                  <div key={result.title} className="tutorial-card-content">
+                    <LazyLoad>
+                      <h3>{result.title}</h3>
+                      <p>{result.description} </p>
+                    </LazyLoad>
+                    <Link className="btn-start-learning" to={result.link}>
+                      {result.title}
+                    </Link>
+                  </div>
                 ))}
               </div>
             </div>
@@ -149,7 +149,10 @@ function Home() {
                   <Link to="/python" className="btn-start-learning">
                     Learn
                   </Link>
-                  <Link to="/machine-learning-reference" className="btn-reference">
+                  <Link
+                    to="/machine-learning-reference"
+                    className="btn-reference"
+                  >
                     Reference
                   </Link>
                 </div>
@@ -162,9 +165,7 @@ function Home() {
                 <div className="tutorial-card-content">
                   <h3>JavaScript</h3>
                   <p>Learn JavaScript programming language.</p>
-                  <p>
-                    Learn how to make web applications using JavaScript.
-                  </p>
+                  <p>Learn how to make web applications using JavaScript.</p>
                   <Link to="/javascript" className="btn-start-learning">
                     Learn
                   </Link>
@@ -202,8 +203,9 @@ function Home() {
                 </div>
                 <div className="tutorial-card-content">
                   <h3>SQL Database Language </h3>
-                  <p>Learn the basics of SQL programming language.
-                    And how to use it to manage databases.
+                  <p>
+                    Learn the basics of SQL programming language. And how to use
+                    it to manage databases.
                   </p>
                   <Link to="/sql" className="btn-start-learning">
                     Learn
@@ -220,8 +222,9 @@ function Home() {
                 </div>
                 <div className="tutorial-card-content">
                   <h3>Kali Linux </h3>
-                  <p>Learn the basics of Kali Linux operating system.
-                    And how to use it to perform penetration testing.
+                  <p>
+                    Learn the basics of Kali Linux operating system. And how to
+                    use it to perform penetration testing.
                   </p>
                   <Link to="/kali-linux" className="btn-start-learning">
                     Learn
@@ -256,8 +259,9 @@ function Home() {
                 </div>
                 <div className="tutorial-card-content">
                   <h3>HTML</h3>
-                  <p>Learn how to create web pages using HTML.
-                    The building blocks of the web.
+                  <p>
+                    Learn how to create web pages using HTML. The building
+                    blocks of the web.
                   </p>
                   <Link to="/html" className="btn-start-learning">
                     Learn
@@ -273,8 +277,9 @@ function Home() {
                 </div>
                 <div className="tutorial-card-content">
                   <h3>CSS</h3>
-                  <p>Learn how to style web pages using CSS.
-                    The language for styling web pages.
+                  <p>
+                    Learn how to style web pages using CSS. The language for
+                    styling web pages.
                   </p>
                   <Link to="/css" className="btn-start-learning">
                     Learn
@@ -290,13 +295,32 @@ function Home() {
                 </div>
                 <div className="tutorial-card-content">
                   <h3>React</h3>
-                  <p>Learn how to create web applications using React.
-                    A JavaScript library for building user interfaces.
+                  <p>
+                    Learn how to create web applications using React. A
+                    JavaScript library for building user interfaces.
                   </p>
                   <Link to="/react" className="btn-start-learning">
                     Learn
                   </Link>
                   <Link to="/reactreference" className="btn-reference">
+                    Reference
+                  </Link>
+                </div>
+              </div>
+              <div className="tutorial-card">
+                <div className="tutorial-card-img">
+                  <img src={git} alt="nodejs logo" />
+                </div>
+                <div className="tutorial-card-content">
+                  <h3>Git</h3>
+                  <p>
+                    Learn how to use Git and GitHub. A version control system
+                    for tracking changes in computer files.
+                  </p>
+                  <Link to="/git" className="btn-start-learning">
+                    Learn
+                  </Link>
+                  <Link to="/gitreference" className="btn-reference">
                     Reference
                   </Link>
                 </div>
@@ -319,7 +343,9 @@ function Home() {
               </div>
               <p id="contact">
                 If you have any questions, please contact us at <br />
-                <a href="mailto:guidemelearn.info@gmail.com" className="mail">Guide Me Learn</a>
+                <a href="mailto:guidemelearn.info@gmail.com" className="mail">
+                  Guide Me Learn
+                </a>
               </p>
             </div>
           </section>
@@ -410,7 +436,9 @@ function Home() {
               </div>
             </div>
             <div className="footer-caret">
+              <a href="/#top" className="footer-caret">
               <i className="fas fa-caret-up" size="50x"></i>
+              </a>
             </div>
           </div>
         </footer>

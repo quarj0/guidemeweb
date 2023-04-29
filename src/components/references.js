@@ -54,6 +54,22 @@ const ReferencesPage = () => {
           <h1 className="refh1">References</h1>
         </div>
       </section>
+      <section>
+        <div className="refdiv">
+          <p>
+            This page contains links to reference pages for various programming, web development, and computer science topics.
+             The reference pages contain code snippets and explanations of the code.
+              The reference pages are intended to be used as a reference for learning and practicing programming and web development.
+          </p>
+          <p>
+            The reference pages are not intended to be used as a substitute for a textbook or other learning material.
+            It is recommended that you use a textbook or other learning material to learn the concepts and then use the reference pages to practice.
+          </p>
+          <p>
+            More reference pages will be added in the future.
+          </p>
+        </div>
+      </section>
 
       <div>
         <h1 className="refh1">Visit links below to learn more</h1>
@@ -105,18 +121,18 @@ const ReferencesPage = () => {
             </a>
           </li>
           <li className="refli">
-            <a className="refa" href="/csharpreference">
-              C# Reference
+            <a className="refa" href="/networkpreference">
+              Networking Reference
             </a>
           </li>
           <li className="refli">
-            <a className="refa" href="/cplusreference">
-              C++ Reference
+            <a className="refa" href="/guiereference">
+              Python GUI Reference
             </a>
           </li>
           <li className="refli">
-            <a className="refa" href="/eference">
-              C Reference
+            <a className="refa" href="/cryptographyference">
+              Cryptography Reference
             </a>
           </li>
           <li className="refli">
@@ -125,6 +141,11 @@ const ReferencesPage = () => {
             </a>
           </li>
 
+          <li className="refli">
+            <a className="refa" href="/reactnativereference">
+              React Native Reference
+            </a>
+          </li>
         </ul>
       </div>
       <footer className="footer">
