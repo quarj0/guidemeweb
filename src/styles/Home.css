@@ -75,7 +75,7 @@
   color: #f50057;
 }
 
-section h2{
+section h2 {
   background-color: rgba(0, 0, 0, 0.2);
   font-size: 3.5rem;
   font-weight: 700;
@@ -83,7 +83,7 @@ section h2{
   margin-bottom: 50px;
   font-family: "Poppins", "sans-serif";
 }
-section p{
+section p {
   color: #cdd5db;
 }
 
@@ -96,7 +96,6 @@ nav .burger {
   color: #fff;
 }
 
-
 /* CSS styling for main content */
 .tutorial-card {
   display: inline-block;
@@ -105,23 +104,23 @@ nav .burger {
   margin: 10px;
 }
 
-
-.landing-page-header h1, p{
+.landing-page-header h1,
+p {
   text-align: center;
 }
 
-.landing-page-tutorials h2{
+.landing-page-tutorials h2 {
   text-align: center;
   margin: 50px;
 }
 
-img{
+img {
   width: 100px;
   height: 100px;
   object-fit: cover;
 }
 
-.tutorial-card-img img{
+.tutorial-card-img img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -129,15 +128,15 @@ img{
   height: auto;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.6);
   margin-top: 40px;
-
 }
 
-.gif-text{
- margin-left: 100px;
-color:slateblue ;
+.gif-text {
+  margin-left: 100px;
+  color: slateblue;
 }
 
-.btn-start-learning, .btn-reference{
+.btn-start-learning,
+.btn-reference {
   text-decoration: none;
   margin: 0 15px 0 15px;
   padding: 10px;
@@ -147,32 +146,29 @@ color:slateblue ;
   border-radius: 4px;
 }
 
-
-.tutorial-card-content{
+.tutorial-card-content {
   align-items: center;
   align-content: center;
   text-align: center;
 }
 
-.btn-start-learning:hover, .btn-reference:hover{
+.btn-start-learning:hover,
+.btn-reference:hover {
   background-color: #0a8d10;
   transition: all 0.15 ease-in-out;
 }
 
-
-.tutorial-card-content h3{
+.tutorial-card-content h3 {
   color: #333333;
-  font-family: 'Poppins',"sans-serif"; 
+  font-family: "Poppins", "sans-serif";
   text-align: center;
 }
 
-.tutorial-card-content p{
-text-align:  start;
-font-family: "Times New Roman", Times, serif;
- font-size: 20px;
+.tutorial-card-content p {
+  text-align: start;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
 }
-
-
 
 /* CSS styling for footer */
 .footer {
@@ -261,17 +257,16 @@ ul.quick-links li:last-child::after {
   content: "";
 }
 
-ul.quick-links li a:hover{
-  color:rgb(209, 18, 18) ;
-  transition:  0.3s ease-in-out;
+ul.quick-links li a:hover {
+  color: rgb(209, 18, 18);
+  transition: 0.3s ease-in-out;
 }
 
-.social-icons li a:hover{
-  color:red ;
+.social-icons li a:hover {
+  color: red;
   background-color: #e4ebe5;
-  transition:  0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
-
 
 .footer-caret {
   position: relative;
@@ -288,8 +283,6 @@ ul.quick-links li a:hover{
 .footer-caret a:hover {
   color: #023800;
 }
-
-
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
@@ -312,16 +305,16 @@ ul.quick-links li a:hover{
   nav .burger {
     display: block;
   }
-    .menu-icon {
-      display: block;
-    }
-    .nav-menu {
-      display: none;
-    }
-    .nav-menu.open {
-      display: block;
-    }
+  .menu-icon {
+    display: block;
   }
+  .nav-menu {
+    display: none;
+  }
+  .nav-menu.open {
+    display: block;
+  }
+}
 
 /* Footer at smaller screens */
 
@@ -329,38 +322,38 @@ ul.quick-links li a:hover{
   .footer {
     text-align: center;
   }
-  
+
   .footer h4 {
     margin-top: 30px;
   }
-  
+
   .footer p {
     margin-bottom: 20px;
   }
-  
+
   .social-icons {
     margin-top: 30px;
   }
-  
+
   .social-icons li {
     margin-right: 15px;
   }
-  
+
   .social-icons li:last-child {
     margin-right: 0;
   }
-  
+
   ul.quick-links {
     display: block;
     margin-top: 30px;
   }
-  
+
   ul.quick-links li {
     display: block;
     margin: 0;
     text-align: center;
   }
-  
+
   ul.quick-links li:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -371,43 +364,40 @@ ul.quick-links li a:hover{
   }
 }
 
-
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   main {
     padding: 10px;
     word-wrap: break-word;
   }
-  
+
   .landing-page-header h1 {
     font-size: 2rem;
   }
-  
+
   .landing-page-header p {
     font-size: 1rem;
   }
-  
+
   .search-form input[type="text"] {
     padding: 5px;
     font-size: 1rem;
   }
-  
+
   .search-form button[type="submit"] {
     font-size: 1rem;
     padding: 5px 10px;
   }
-  
+
   .tutorial-card {
     max-width: 100%;
   }
-  
-  .tutorial-card-content h3 {
-    font-size: .5rem;
-  }
-  
- 
 
-/* Media queries for responsive design for navbar */
+  .tutorial-card-content h3 {
+    font-size: 0.5rem;
+  }
+
+  /* Media queries for responsive design for navbar */
 
   .navbar-container {
     flex-direction: column;
@@ -444,11 +434,11 @@ ul.quick-links li a:hover{
     width: 150px;
   }
 
-  .btn-reference{
-display: none;
+  .btn-reference {
+    display: none;
   }
 
-  .btn-start-learning{
+  .btn-start-learning {
     text-decoration: none;
     margin: 2px;
     padding: 10px;
@@ -458,9 +448,9 @@ display: none;
     border-radius: 4px;
   }
 
-  .btn-start-learning:hover, .btn-reference:hover{
+  .btn-start-learning:hover,
+  .btn-reference:hover {
     background-color: #169c1d;
     transition: all 0.15s ease-in-out;
   }
-
 }

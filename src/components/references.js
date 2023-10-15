@@ -40,7 +40,7 @@ const ReferencesPage = () => {
                 Exercise
               </Link>
             </li>
-            
+
             <li className="nav-item">
               <Link to="/projects" className="nav-link" onClick={closeMenu}>
                 Projects
@@ -56,18 +56,20 @@ const ReferencesPage = () => {
       </section>
       <section>
         <div className="refdiv">
-          <p>
-            This page contains links to reference pages for various programming, web development, and computer science topics.
-             The reference pages contain code snippets and explanations of the code.
-              The reference pages are intended to be used as a reference for learning and practicing programming and web development.
+          <p className="">
+            This page contains links to reference pages for various programming,
+            web development, and computer science topics. The reference pages
+            contain code snippets and explanations of the code. The reference
+            pages are intended to be used as a reference for learning and
+            practicing programming and web development.
           </p>
           <p>
-            The reference pages are not intended to be used as a substitute for a textbook or other learning material.
-            It is recommended that you use a textbook or other learning material to learn the concepts and then use the reference pages to practice.
+            The reference pages are not intended to be used as a substitute for
+            a textbook or other learning material. It is recommended that you
+            use a textbook or other learning material to learn the concepts and
+            then use the reference pages to practice.
           </p>
-          <p>
-            More reference pages will be added in the future.
-          </p>
+          <p>More reference pages will be added in the future.</p>
         </div>
       </section>
 
